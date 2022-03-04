@@ -12,18 +12,19 @@
     <div class="background-animated" id = "bg1">
         <div class = "textContainer">
 
-            <h1> Nico Graves</h1>
+
+          <div class = "texttt">
+            <h1> nico Graves</h1>
             <p>A passionate young go getter with a heart of gold, and an overactive imagination.</p>
         
             <a href = "games.html">Stuff I've Made</a>
-            
-         
             <ul>
                 <li>Resume</li>
                 <li>Itch.io</li>
                 <li>Github</li>
 
             </ul>
+          </div>
           
         </div>
     
@@ -36,13 +37,22 @@
 <style>
 
 
+  .texttt{
+    margin: 10;  
+  }
+
   body{
     margin: 0;
   }
 
+  h1{
+    font-size: 36;
+    font-family: "name";
+  }
+
 
   a{
-    color:white;
+    color:inherit;
   }
     .hide{
         display: none;
@@ -53,24 +63,36 @@
     }
 
     @font-face {
+      font-family: "name";
+      src: url("Saturn-Boing.woff");
+    }
+
+    @font-face {
         font-family: "yearis199x";
-        src: url("wisdom.ttf");
+        src: url("twoson.woff");
     }
     .textContainer{
         /* background-color:black; */
+        border-radius: 25px;
 
-        background-color: rgba(10, 10, 10, 0.5);
+        background-color: rgba(20, 20, 20, 0.8);
         /* opacity: 100% !important;
         color: white !important; */
         color: white;
         position:absolute;
         font-family: "yearis199x";
-        
+        font-size: 23;
+      
+   /* / */
+       top: 5%;
+       left:2.5%;
+       bottom: 5%;
+       right: 5%
 
-        left:10;
+        /* left:10;
         top: 10;
         right: 10;
-        bottom: 10;
+        bottom: 10; */
         /* background-image: url("./bgs/033.png"); */
       
     }
