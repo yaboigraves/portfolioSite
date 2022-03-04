@@ -1,0 +1,55 @@
+<html>
+    <div class="background-animated2">
+       
+    </div>
+
+    <div class="background-animated">
+        <h1>Test</h1>
+    </div>
+
+<style>
+    .background-animated {
+      width: 100%;
+      height: 100vh;
+      opacity: 50%;
+      position: absolute;
+      background-color: #000;
+      background-image: url('./bgs/009.png');
+      animation: infiniteScrollBg 35s linear infinite;
+    }
+    
+    @keyframes infiniteScrollBg {
+      0% {
+        background-position: 50% 100%;
+      }
+      100%{
+        background-position: 50% (-404 * 2);
+      }
+    }
+
+
+    .background-animated2 {
+      width: 100%;
+      height: 100vh;
+      opacity: 100%;
+      position: absolute;
+      background-color: #000;
+      background-image: url('./bgs/004.png');
+      animation: infiniteScrollBg2 13s linear infinite;
+    }
+    
+    @keyframes infiniteScrollBg2 {
+      0% {
+        background-position: 50% (-404 * 2);
+      }
+      100%{
+        background-position: 30% 0;
+      }
+    }
+</style>
+</html>
+
+
+
+
+
