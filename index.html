@@ -17,19 +17,50 @@
             <h1> nico Graves</h1>
             <p>A passionate young go getter with a heart of gold, and an overactive imagination.</p>
         
-            <a href = "games.html">Stuff I've Made</a>
-            <ul>
-                <li>Resume</li>
-                <li>Itch.io</li>
-                <li>Github</li>
+            <h2>Stuff I've Made</h2>
+            <br>
 
-            </ul>
+              <div class="gallery">
+                <a target="_blank" href="">
+                  <img src="./bgs/009.png" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc" >Alibi</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="">
+                  <img src="./bgs/010.png" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Condor</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="">
+                  <img src="./bgs/014.png" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Moloch</div>
+              </div>
+
+
+             
+              <div class = "footer">
+               <a href=""> resume</a> |
+               <a href=""> github</a> |
+               <a href=""> itch.io</a> |
+               <a href=""> twitter</a> |
+               <a href=""> instagram</a> |
+               <a href=""> soundcloud</a>
+              </div>
+
+
           </div>
+        
           
         </div>
     
     </div>
-  
+
+
 
 
 
@@ -37,8 +68,23 @@
 <style>
 
 
+  .footer {
+    position: fixed;
+    left: 20%;
+    bottom: 0;
+    right: 20%;
+    background-color: rgba(20, 20, 20, 0.8);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+  }
+
   .texttt{
-    margin: 10;  
+    margin: 15;   
+  }
+
+  h2{
+    margin-bottom: 0;
   }
 
   body{
@@ -87,7 +133,7 @@
        top: 5%;
        left:2.5%;
        bottom: 5%;
-       right: 5%
+       right: 2.5%
 
         /* left:10;
         top: 10;
@@ -105,7 +151,7 @@
     }
 
     .background-animated::before{
-        /* background-image: url('./bgs/028.png'); */
+        /* \\\background-image: url('./bgs/028.png'); */
       background-size: cover;
       opacity: 100%;
       position: absolute;
@@ -145,6 +191,36 @@
         background-position: 50% (-404 * 2);
       }
     }
+
+
+
+
+
+
+  div.gallery {
+    margin-top: 5px;
+    float: left;
+    width: 200px;
+    margin-right: 10;
+ 
+  }
+
+  div.gallery:hover {
+    text-decoration: underline;
+    font-size: 25;
+    width: 210px;
+  }
+
+  div.gallery img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 8px;
+    text-align: center;
+  }
 </style>
 
 <script>
@@ -176,6 +252,10 @@
 
     document.getElementById("bg1").style.backgroundImage = "url(./bgs/" + img1 + ".png)";
     document.getElementById("bg2").style.backgroundImage = "url(./bgs/" + img2 + ".png)";
+
+
+
+
 
 
 
