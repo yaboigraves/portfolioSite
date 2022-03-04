@@ -4,9 +4,6 @@
 <html>
   
     <div class="background-animated2" id = "bg2">
-
-
-       
     </div>
 
     <div class="background-animated" id = "bg1">
@@ -15,41 +12,37 @@
 
           <div class = "texttt">
             <h1> nico Graves</h1>
-            <p>A passionate young go getter with a heart of gold, and an overactive imagination.</p>
+            <p style="font-size: 75%;">A passionate young go getter with a heart of gold, and an overactive imagination.</p>
         
             <h2>Stuff I've Made</h2>
             <br>
 
               <div class="gallery">
-                <a target="_blank" href="">
-                  <img src="./bgs/009.png" alt="Cinque Terre" width="600" height="400">
+                <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
+                  <img src="./alibi.gif" alt="Cinque Terre" width="600" height="400">
                 </a>
                 <div class="desc" >Alibi</div>
               </div>
 
-              <div class="gallery">
-                <a target="_blank" href="">
-                  <img src="./bgs/010.png" alt="Forest" width="600" height="400">
+              <!-- <div class="gallery">
+                <a target="_blank" href="https://gravesmakesart.itch.io/condor">
+                  <img src="./condor.gif" alt="Forest" width="600" height="400">
                 </a>
                 <div class="desc">Condor</div>
-              </div>
+              </div> -->
 
-              <div class="gallery">
-                <a target="_blank" href="">
-                  <img src="./bgs/014.png" alt="Northern Lights" width="600" height="400">
-                </a>
-                <div class="desc">Moloch</div>
-              </div>
+      
 
 
              
               <div class = "footer">
                <a href=""> resume</a> |
-               <a href=""> github</a> |
-               <a href=""> itch.io</a> |
-               <a href=""> twitter</a> |
-               <a href=""> instagram</a> |
-               <a href=""> soundcloud</a>
+               <a href="https://github.com/yaboigraves"> github</a> |
+               <a href="https://gravesmakesart.itch.io/"> itch.io</a> |
+               <a href="https://twitter.com/gravesmakesart"> twitter</a> |
+               <a href="https://www.instagram.com/lord_of_the_mids/"> instagram</a> |
+               <a href="https://soundcloud.com/gravesmakesart"> soundcloud</a>
+               
               </div>
 
 
@@ -70,9 +63,11 @@
 
   .footer {
     position: fixed;
-    left: 20%;
+    left:20%;
+    right:20%;
     bottom: 0;
-    right: 20%;
+    max-height: 20px;
+  
     background-color: rgba(20, 20, 20, 0.8);
     color: white;
     text-align: center;
@@ -147,7 +142,7 @@
     .background-animated {
       width: 100%;
       height: 100vh;
-      animation: infiniteScrollBg 16s linear infinite;
+      animation: infiniteScrollBg 32s linear infinite;
     }
 
     .background-animated::before{
@@ -180,7 +175,7 @@
       position: absolute;
       background-color: #000;
       /* background-image: url('./bgs/036.png'); */
-      animation: infiniteScrollBg2 24s linear infinite;
+      animation: infiniteScrollBg2 32s linear infinite;
     }
     
     @keyframes infiniteScrollBg2 {
@@ -200,7 +195,7 @@
   div.gallery {
     margin-top: 5px;
     float: left;
-    width: 200px;
+    width: 20%;
     margin-right: 10;
  
   }
@@ -208,7 +203,7 @@
   div.gallery:hover {
     text-decoration: underline;
     font-size: 25;
-    width: 210px;
+    width: 25%;
   }
 
   div.gallery img {
@@ -218,8 +213,8 @@
   }
 
   div.desc {
-    padding: 8px;
-    text-align: center;
+    padding-top: 4px;
+    text-align: left;
   }
 </style>
 
