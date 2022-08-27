@@ -6,65 +6,126 @@
 <head>
   <title>HIRE ME PLS</title> 
 </head>
-  
-    <div class="background-animated2" id = "bg2">
+
+  <div class="background-animated2" id = "bg2">
+  </div>
+
+  <div class="background-animated" id = "bg1">
+  </div>
+
+
+  <div class = "textContainer">
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">Nico Graves</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Stuff I've Made</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Stuff I've Worked On</button>
     </div>
-
-    <div class="background-animated" id = "bg1">
-        <div class = "textContainer">
-
-
-          <div class = "texttt">
-            <h1> nico Graves</h1>
-            <p style="font-size: 75%;">A passionate young go getter with a heart of gold, and an overactive imagination.</p>
+    
+    <!-- Tab content -->
+    <div id="London" class="tabcontent">
+      <p>A passionate young go getter with a heart of gold and an overactive imagination</p>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <h3 style = "margin: 1%; "> Personal Projects</h3>
+     
+      <div class="gallery">
+        <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
+          <img src="./alibi.gif" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc" >
+          Alibi, a pulp interrigation mystery.
+        </div>
+  
         
-            <h2>Stuff I've Made</h2>
-            <br>
-
-              <div class="gallery">
-                <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
-                  <img src="./alibi.gif" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc" >Alibi</div>
-              </div>
-
-
-              <div class="gallery">
-                <a target="_blank" href="http://gone.fish">
-                  <img src="./betterFish.gif" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc" >Gone Fishing</div>
-              </div>
-
-
-              <!-- <div class="gallery">
-                <a target="_blank" href="https://gravesmakesart.itch.io/condor">
-                  <img src="./condor.gif" alt="Forest" width="600" height="400">
-                </a>
-                <div class="desc">Condor</div>
-              </div> -->
+      </div>
 
       
+      <div class="gallery">
+        <a target="_blank" href="http://gone.fish">
+          <img src="./betterFish.gif" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc" >Gone Fishing, a relaxing audio visualizer</div>
+      </div>
 
 
-             
-              <div class = "footer">
-               <a href="NicoGravesUnityDevResume.pdf" target="_blank" download=""> resume</a> |
-               <a href=" https://github.com/yaboigraves" target="_blank"> github</a> |
-               <a href="https://gravesmakesart.itch.io/" target="_blank"> itch.io</a> |
-               <a href="https://twitter.com/gravesmakesart" target="_blank"> twitter</a> |
-               <a href="https://www.instagram.com/lord_of_the_mids/" target="_blank"> instagram</a> |
-               <a href="https://soundcloud.com/gravesmakesart" target="_blank"> soundcloud</a>
-               
-              </div>
 
-
-          </div>
-        
-          
-        </div>
-    
     </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <h3 style = "margin: 1%; "> Personal Projects</h3>
+     
+      <div class="gallery">
+        <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
+          <img src="./homebodyGif1.gif" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc" >
+          Homebody, a psycological horror game.
+          <br>
+          <br>
+          Game Grumps
+        </div>
+  
+        
+      </div>
+
+
+    </div>
+<!-- 
+    <div class = "texttt">
+      <h1> nico Graves</h1>
+      <p style="font-size: 75%;">A passionate young go getter with a heart of gold, and an overactive imagination.</p>
+  
+      <h2>Stuff I've Made</h2>
+      <br>
+
+        <div class="gallery">
+          <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
+            <img src="./alibi.gif" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc" >Alibi</div>
+        </div>
+
+
+        <div class="gallery">
+          <a target="_blank" href="http://gone.fish">
+            <img src="./betterFish.gif" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc" >Gone Fishing</div>
+        </div>
+
+
+        <!-- <div class="gallery">
+          <a target="_blank" href="https://gravesmakesart.itch.io/condor">
+            <img src="./condor.gif" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Condor</div>
+        </div> -->
+
+
+
+
+    
+
+
+    <!-- </div>  -->
+
+    
+      
+    <div class = "footer">
+      <a href="NicoGravesUnityDevResume.pdf" target="_blank" download=""> resume</a> |
+      <a href=" https://github.com/yaboigraves" target="_blank"> github</a> |
+      <a href="https://gravesmakesart.itch.io/" target="_blank"> itch.io</a> |
+      <a href="https://twitter.com/gravesmakesart" target="_blank"> twitter</a> |
+      <a href="https://www.instagram.com/lord_of_the_mids/" target="_blank"> instagram</a> |
+      <a href="https://soundcloud.com/gravesmakesart" target="_blank"> soundcloud</a>
+      
+      </div>
+    
+  </div>
+  
+
 
 
 
@@ -72,15 +133,63 @@
 
 
 <style>
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: rgba(20,20,20,0.1);
+  border-radius: 25px;
+}
 
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float:none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color:wheat;
+  font-family: "yearis199x";
+  font-size: large;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(80,80,80,1);
+  
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 0px solid #ccc;
+  border-top: none;
+  color:wheat;
+
+}
+
+
+
+ a{
+  text-decoration: none;
+ }
 
   .footer {
     position: fixed;
     left:20%;
     right:20%;
-    bottom: 0;
-    max-height: 20px;
-  
+    bottom: 5;
+    max-height: 100px;
+    
     background-color: rgba(20, 20, 20, 0.8);
     color: white;
     text-align: center;
@@ -88,7 +197,7 @@
   }
 
   .texttt{
-    margin: 15;   
+    margin: 25;   
 
   }
 
@@ -137,6 +246,8 @@
     .textContainer{
         /* background-color:black; */
         border-radius: 25px;
+      
+        
         
         /* background-color: rgba(20, 20, 20, 0.8); */
 
@@ -214,31 +325,36 @@
 
 
   div.gallery {
+    margin: 1%;
     margin-top: 5px;
     float: left;
-    width: 15%;
+    width: 25%;
     /* overflow: hidden; */
     margin-right: 10;
-   
+
     overflow:visible;
+    background-color: rgba(20,20, 20,0.6);
+    border: 0px;
+    border-radius: 25px;
   }
 
   div.gallery:hover {
     text-decoration: underline;
-    font-size: 25;
+    /* font-size: 25; */
   }
 
   div.gallery img {
     border-radius: 10px;
     width: 100%;
     height: auto;
+  
   }
 
   div.desc {
-    padding-top: 4px;
+    margin: 10px;
     text-align: left;
-    font-size: 22;
-    overflow:visible;
+    font-size: 2vmin;
+    
   }
 </style>
 
@@ -278,6 +394,29 @@
 
 
 
+
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+  openCity(event, 'London')
 
 </script>
 
