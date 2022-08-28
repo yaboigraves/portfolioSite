@@ -26,10 +26,10 @@
       <div id="London" class="tabcontent">
 
 
-        <img src = "homebodyGif1.gif" id = "portrait" style = "display: block;
+        <img src = "./previewGifs/sleepynick.gif" id = "portrait" style = "display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 25%;margin-top:15px; margin-bottom: 15px; border-radius: 100px;  box-shadow: 0 0 0 3px wheat, 0 0 0 12px #251C00;
+        width: 25%;margin-top:25px; margin-bottom: 15px; border-radius: 100px;  box-shadow: 0 0 0 3px wheat, 0 0 0 12px #251C00;
 ">
    
        
@@ -59,6 +59,7 @@
             <img src="./previewGifs/gonefish.gif" alt="Cinque Terre" width="600" height="400">
           </a>
           <div class="desc" >Gone Fishing</div>
+
         </div>
   
   
@@ -74,6 +75,11 @@
           </a>
           <div class="desc" >
             Homebody
+            <br>
+            
+            <div style ="font-size:x-small;">With Game Grumps INC</div>
+
+
           </div>
       
     
@@ -148,7 +154,8 @@
     overflow: hidden;
     border: 0px solid #ccc;
     border-radius: 25px;
-    /* margin: 1%; */
+    margin: 1%;
+    display:flex;
 
   }
   
@@ -156,8 +163,9 @@
   .tab button {
     background-color: rgba(20,20,20,0.5);
     /* border-radius: 25px; */
+    width: 33.3%;
     float:none;
-    width:25%;
+    flex-grow: 1;
     border: none;
     outline: none;
     cursor: pointer;
@@ -171,7 +179,7 @@
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: rgba(100,100,100,1);
+    background-color: rgba(123,124,125,1);
     cursor: url(./cursors/Glove\ Link.cur ),auto;
     
   }
@@ -185,6 +193,7 @@
   .tabcontent {
     display: none;
     padding: 6px 12px;
+    margin: 1%;
     border: 0px solid #ccc;
     border-top: none;
     color:wheat;
@@ -419,7 +428,7 @@
 #arrow {
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-top: 10px solid red;
+	border-top: 10px solid wheat;
   height: 0; 
   margin: 60px 0px 0px 360px;
   position: absolute;
@@ -478,47 +487,67 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
     //talking2
 
     var dialogs = [
-      '... zzzz ...',
-      "...zzzzzz......",
-      "zzzzzzzzzzzzzzzz......zz",
-      "..zzzzz-OH OH Hello! I didn't uh, I didn't see you there. Was just uh, resting my eyes ya know.",
-      "Anywho, you're probably looking at this page because I sent it to you after seeing your job posting!!",
-      "Websites are a little impersonal, so I thought I'd scan my brain and upload a digital version of it here!",
-      "You can find links to my resume and stuff at the bottom, so if you want the TL;DR version look there!",
-      "I'm Nico! I'm a game developer and designer based out of San Francisco currently.",
-      "I come from a programming background, I have a bachelors in Computer Science from San Francisco State.",
-      "I view myself as more of an artist/designer though, creating worlds and experiences is my jam.",
-      "On top of my strong programming background, I have an ecclectic skill set, I really love all parts of development.",
-      "I'm experienced with sprite work, 3d modelling and animation, a touch of shaders, tools dev, you name it. ",
-      "This means I'm a great asset to have on a small multi disciplinary team, I can wear alot of hats!",
-      "Catch me talking about how cool vertex shaders are one second then ludo narraritive systems in emergent gameplay the next!",
-      "A little about my work background!",
-      "While working on my degree I started teaching at an afterschool program specifically geared for programming.",
-      "I loved working with kids (8-18), and after I got my programming chops up a bit I started teaching game dev there.",
-      "This gave me an awesome oppurtunity to share what I was learning with kids, so while teaching there I developed my skills.",
-      "I started doing game jams with friends and alone as often as I could, and instantly got hooked! ",
-      "I had always looked up to solo-devs like Lucas Pope (Papers Please) and Eric Barone (Stardew Valley)...",
-      "Inspired by them, I made sure that I learned as much about as many parts of game dev as I could.",
-      "And then in 2022, I got hired by Game Grumps to work on Homebody, a psychological Horror Game.",
-      "I work(ed) on a small team and really got to spread my wings and learn a bunch about actually finishing and shipping games.",
-      "I was lucky enough to work under Alex Belzer, who had previously worked on God of War at Sony Santa Monica.",
-      "Homebody's where I really cut my teeth, but alas all good contracts must end, so here we are!",
-      "Now I'm working on finishing out some year long projects with some friends, and looking for new projects to help on!",
-      "If I sound like a good fit for your team, feel free to contact my corporeal form through my contact info linked below.",
-      "Thanks so much for getting to know me a bit, I'm just going to rest my eyes a bit now, feel free to hang out as long as you like!",
-      ".....zzzzzzzz....",
-      "..zzz."
+      ['... zzzz ...',"sleepynick.gif"],
+      ["...zzzzzz......"],
+      ["zzzzzzzzzzzzzzzz......zz"],
+      ["..zzzzz-OH OH Hello! I didn't uh, I didn't see you there. Was just uh, resting my eyes ya know.","./previewGifs/nicktalkingexcited.gif"],
+      ["Anywho, you're probably looking at this page because I sent it to you after seeing your job posting!","./previewGifs/nicktalking.gif"],
+      ["Websites are a little impersonal, so I thought I'd scan my brain and upload a digital version of it here!"],
+      ["You can find links to my resume and stuff at the bottom, so if you want the TL;DR version look there!"],
+      ["I'm Nico! I'm a game developer and designer based out of San Francisco currently."],
+      ["I come from a programming background, I have a bachelors in Computer Science from San Francisco State."],
+      ["I view myself as more of an artist/designer though, creating worlds and experiences is my jam."],
+      ["I view games as an amazing medium to tell stories in a different way than other media..."],
+      ["Some of my favorite games are those that bend the rules of what a story is, stuff like dwarf fortress or LSD Dream Simulator!","./previewGifs/nicktalkingexcited.gif"],
+      ["On top of my strong programming background, I have an ecclectic skill set, I really love all parts of development.","./previewGifs/nicktalking.gif"],
+      ["Music has always been a passion of mine, in my free time I'm making jazz, prog rock, ambient music, hip hop beats, whatever I'm feelin."],
+      ["I'm experienced with graphics, a touch of shaders, tools dev, writing, audio design, you name it."],
+      ["I view graphics as an aesthetic problem to be solved, so I'm a big fan of games that are stylized but simple."],
+      ["Jet Set Radio, Hylics, Paper Mario, Return of The Obra Dinn, stuff like that. If you can't tell I like cell shading."],
+      ["This means I'm a great asset to have on a small multi disciplinary team, I can wear alot of hats!","./previewGifs/nicktalkingexcited.gif"],
+      ["Jargon aside, how about a little about my work background!","./previewGifs/nicktalking.gif"],
+      ["While working on my degree I started teaching at an afterschool program specifically geared for programming."],
+      ["I loved working with kids (8-18), and after I got my programming chops up a bit I started teaching game dev there."],
+      ["This gave me an awesome opportunity to share what I was learning with kids, so while teaching there I developed my skills."],
+      ["I started doing game jams with friends and alone as often as I could, and instantly got hooked! "],
+      ["I had always looked up to solo-devs like Lucas Pope (Papers Please) and Eric Barone (Stardew Valley)..."],
+      ["Inspired by them, I made sure that I learned as much about as many parts of game dev as I could."],
+      ["And then in 2022, I got hired by Game Grumps to work on Homebody, a psychological Horror Game.","./previewGifs/nicktalkingexcited.gif"],
+      ["I work(ed) on a small team and really got to spread my wings and learn a bunch about actually finishing and shipping games.","./previewGifs/nicktalking.gif"],
+      ["I was lucky enough to work under Alex Belzer, who had previously worked on God of War at Sony Santa Monica. Safe to say I learned a lot!"],
+      ["Homebody's where I really cut my teeth, but alas all good contracts must end, so here we are!"],
+      ["Now I'm working on finishing out some year long projects with some friends, and looking for new projects to help on!"],
+      ["If I sound like a good fit for your team, feel free to contact my corporeal form through my contact info linked below."],
+      ["Thanks so much for getting to know me a bit, I'm just going to rest my eyes a bit now, feel free to hang out as long as you like!"],
+      [".....zzzzzzzz....","./previewGifs/sleepynick.gif"],
+      ["..zzz."],
+      ["..zzz."],
+      ["..zzz.."],
+      ["..zzz...."],
+      ["..zzz......."],
+      ["..zzz................................."],
+      ["..Are you still here?","./previewGifs/nicktalking.gif"],
+      ["Are you expecting something?"],
+      ["This isn't the end of like, movie credits or anything..."],
+      ["No teaser here...what would it even be for?"],
+      ["...","./previewGifs/nickidle.gif"],
+      ["..."],
+      ["Ok, if you promise to give me an interview, I'll announce something. Deal?","./previewGifs/nicktalking.gif"],
+      ["Ok deal..."],
+      ["ANNOUNCING... PORTFOLIO SITE ... 2!!!!!!","./previewGifs/nicktalkingexcited.gif"],
+      ["Like, that sounds lame c'mon.","./previewGifs/sleepynick.gif"],
+      ["You really ought to go just look at my resume.","./previewGifs/nicktalking.gif"],
+      ["Thanks for staying the whole way through though. It was a pleasure meeting you! I'm slee- I mean resting my eyes now. Bye!!"],
+      [".zzzzzz....","./previewGifs/sleepynick.gif","sleepynick.gif"]
     ]
-
-    var gifs = ["./homebodyGif1.gif","./previewGifs/alibi.gif"]
 
   
       //randomly change the image numbers used
 
    
   
-      let img1 = Math.floor(Math.random() * 326)
-      let img2 = Math.floor(Math.random() * 326)
+      let img1 = Math.floor(Math.random() * 160)
+      let img2 = Math.floor(Math.random() * 160)
   
      
       if(img1 < 10){
@@ -574,7 +603,7 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
   
 
     initial = 0;
-    individual = dialogs[initial].split('');
+    individual = dialogs[initial][0].split('');
 
     
 
@@ -583,19 +612,25 @@ function createDiag ( dialog ) {
   document.getElementById("dialog").onmousedown = function () {}
   Mousetrap.unbind("enter");
 
+
+
   //TODO: bind these functions to things that cancel the timeout and auto complete
   
   for(i = 0; i < dialog.length; i++) {
     (function(i){
       setTimeout(function(){
-        $('#dialog').text($('#dialog').text() +   dialog[i]);
+        $('#dialog').text($('#dialog').text() + dialog[i]);
         if (i == dialog.length-1 ) {
           $('#dialog').prepend('<div id="arrow"></div>');
           Mousetrap.bind('enter', function() {
+            if(dialogs[initial + 1][1]){
+              $("#portrait").attr("src",dialogs[initial + 1][1])
+            }
+
             if (dialogs[initial+1]) {
               $('#dialog').text('');
               initial += 1;
-              individual = dialogs[initial].split('');
+              individual = dialogs[initial][0].split('');
               createDiag( individual );
             }
           });
@@ -603,21 +638,21 @@ function createDiag ( dialog ) {
           
           document.getElementById("dialog").onmousedown = function() {
            
-            if(gifs[initial + 1]){
-              $("#portrait").attr("src",gifs[initial + 1])
+            if(dialogs[initial + 1][1]){
+              $("#portrait").attr("src",dialogs[initial + 1][1])
             }
             
 
-            if (dialogs[initial+1]) {
+            if (dialogs[initial+1][0]) {
               $('#dialog').text('');
               initial += 1;
-              individual = dialogs[initial].split('');
+              individual = dialogs[initial][0].split('');
               createDiag( individual );
             }
             
           }
         }
-      }, 35*i);  
+      }, 15*i);  
     
     }(i));
     
