@@ -499,12 +499,12 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       ["I view myself as more of an artist/designer though, creating worlds and experiences is my jam."],
       ["I view games as an amazing medium to tell stories in a different way than other media..."],
       ["Some of my favorite games are those that bend the rules of what a story is, stuff like dwarf fortress or LSD Dream Simulator!","./previewGifs/nicktalkingexcited.gif"],
-      ["On top of my strong programming background, I have an ecclectic skill set, I really love all parts of development.","./previewGifs/nicktalking.gif"],
+      ["On top of my strong programming background, I have an eclectic skill set, I really love all parts of development.","./previewGifs/nicktalking.gif"],
       ["Music has always been a passion of mine, in my free time I'm making jazz, prog rock, ambient music, hip hop beats, whatever I'm feelin."],
       ["I'm experienced with graphics, a touch of shaders, tools dev, writing, audio design, you name it."],
       ["I view graphics as an aesthetic problem to be solved, so I'm a big fan of games that are stylized but simple."],
       ["Jet Set Radio, Hylics, Paper Mario, Return of The Obra Dinn, stuff like that. If you can't tell I like cell shading."],
-      ["This means I'm a great asset to have on a small multi disciplinary team, I can wear alot of hats!","./previewGifs/nicktalkingexcited.gif"],
+      ["This means I'm a great asset to have on a small multi disciplinary team, I can wear a lot of hats!","./previewGifs/nicktalkingexcited.gif"],
       ["Jargon aside, how about a little about my work background!","./previewGifs/nicktalking.gif"],
       ["While working on my degree I started teaching at an afterschool program specifically geared for programming."],
       ["I loved working with kids (8-18), and after I got my programming chops up a bit I started teaching game dev there."],
@@ -605,17 +605,20 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
     initial = 0;
     individual = dialogs[initial][0].split('');
 
-    
+
+
+
+
 
 function createDiag ( dialog ) {
   
-  document.getElementById("dialog").onmousedown = function () {}
+  document.getElementById("dialog").onmousedown = function () {
+    clearTimeout();
+  }
   Mousetrap.unbind("enter");
-
-
-
-  //TODO: bind these functions to things that cancel the timeout and auto complete
   
+  //TODO: bind these functions to things that cancel the timeout and auto complete
+
   for(i = 0; i < dialog.length; i++) {
     (function(i){
       setTimeout(function(){
@@ -652,7 +655,7 @@ function createDiag ( dialog ) {
             
           }
         }
-      }, 15*i);  
+      }, 20*i);  
     
     }(i));
     
