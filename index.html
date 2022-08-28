@@ -7,8 +7,8 @@
     <title>HIRE ME PLS</title> 
   </head>
   
-    <div class="background-animated2" id = "bg2">
-    </div>
+      <div class="background-animated2" id = "bg2">
+      </div>
   
     <div class="background-animated" id = "bg1">
     </div>
@@ -24,7 +24,19 @@
       
       <!-- Tab content -->
       <div id="London" class="tabcontent">
-        <p>A passionate young go getter with a heart of gold and an overactive imagination</p>
+
+
+        <img src = "homebodyGif1.gif" id = "portrait" style = "display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;margin-top:15px; margin-bottom: 15px; border-radius: 100px;  box-shadow: 0 0 0 3px wheat, 0 0 0 12px #251C00;
+">
+   
+       
+        <div id="dialog"></div>
+       
+      </h6>
+   
       </div>
       
       <div id="Paris" class="tabcontent">
@@ -35,7 +47,7 @@
             <img src="./previewGifs//alibi.gif" alt="Cinque Terre" width="600" height="400">
           </a>
           <div class="desc" >
-            Alibi, a pulp interrigation mystery.
+            Alibi
           </div>
     
           
@@ -46,7 +58,7 @@
           <a target="_blank" href="http://gone.fish">
             <img src="./previewGifs/gonefish.gif" alt="Cinque Terre" width="600" height="400">
           </a>
-          <div class="desc" >Gone Fishing, a relaxing audio visualizer</div>
+          <div class="desc" >Gone Fishing</div>
         </div>
   
   
@@ -54,18 +66,16 @@
       </div>
       
       <div id="Tokyo" class="tabcontent">
-        <h3 style = "margin: 1%; "> Personal Projects</h3>
+        <h3 style = "margin: 1%; "> Professional Projects</h3>
        
         <div class="gallery">
-          <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
+          <a target="_blank" href="https://store.steampowered.com/app/1959350/Homebody/">
             <img src="./homebodyGif1.gif" alt="Cinque Terre" width="600" height="400">
           </a>
           <div class="desc" >
-            Homebody, a psycological horror game.
-            <br>
-            <br>
-            Game Grumps
+            Homebody
           </div>
+      
     
           
         </div>
@@ -137,18 +147,21 @@
   .tab {
     overflow: hidden;
     border: 0px solid #ccc;
-    background-color: rgba(20,20,20,0.1);
     border-radius: 25px;
+    /* margin: 1%; */
+
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
-    background-color: inherit;
+    background-color: rgba(20,20,20,0.5);
+    /* border-radius: 25px; */
     float:none;
+    width:25%;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px;
     transition: 0.3s;
     color:wheat;
     font-family: "yearis199x";
@@ -158,15 +171,15 @@
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: rgba(80,80,80,1);
+    background-color: rgba(100,100,100,1);
     cursor: url(./cursors/Glove\ Link.cur ),auto;
     
   }
   
   /* Create an active/current tablink class */
-  .tab button.active {
+  /* .tab button.active {
     
-  }
+  } */
   
   /* Style the tab content */
   .tabcontent {
@@ -183,18 +196,27 @@
    a{
     text-decoration: none;
    }
+
+   a:hover{
+    text-decoration: underline;
+   }
   
     .footer {
       position: fixed;
       left:20%;
       right:20%;
-      bottom: 5;
-      max-height: 100px;
+      bottom: 1%;
+      padding: 10;
+      
+      max-height: 15%;
+ 
       
       background-color: rgba(20, 20, 20, 0.8);
-      color: white;
+      color: wheat;
       text-align: center;
       border-radius: 10px;
+   
+
     }
   
     .texttt{
@@ -206,6 +228,7 @@
       margin-bottom: 0;
     }
   
+
     body{
       margin: 0;
     
@@ -216,7 +239,11 @@
     a{
       cursor: url(./cursors/Glove\ Link.cur ),auto;
     }
+    
+    #dialog{
+      cursor: url(./cursors/Glove\ Link.cur ),auto;
 
+    }
   
     h1{
       font-size: 36;
@@ -279,7 +306,7 @@
       .background-animated {
         width: 100%;
         height: 100vh;
-        animation: infiniteScrollBg 32s linear infinite;
+        animation: infiniteScrollBg 12s linear infinite;
       }
   
       .background-animated::before{
@@ -295,11 +322,11 @@
       
       @keyframes infiniteScrollBg {
         0% {
-          background-position: 50% (-404 * 2);
+          background-position: 128 -256;
   
         }
         100%{
-          background-position: 50% 100%;
+          background-position: 128 256;
   
         }
       }
@@ -310,17 +337,17 @@
         height: 100vh;
         opacity: 33%;
         position: absolute;
-        background-color: #000;
+        /* background-color: #000; */
         /* background-image: url('./bgs/036.png'); */
-        animation: infiniteScrollBg2 32s linear infinite;
+        animation: infiniteScrollBg2 8s linear infinite;
       }
       
       @keyframes infiniteScrollBg2 {
         0% {
-          background-position: 50% 100%;
+          background-position: 0 0;
         }
         100%{
-          background-position: 50% (-404 * 2);
+          background-position: 256 256;
         }
       }
   
@@ -354,13 +381,126 @@
   
     div.desc {
       margin: 10px;
-      text-align: left;
-      font-size: 2vmin;
+      text-align: center;
+      font-size: px;
       
     }
+
+
+
+
+
+
+@-webkit-keyframes arrow_anim {
+   from { margin-top: 58px; }
+     to { margin-top: 67px; }
+}
+
+@-moz-keyframes arrow_anim {
+   from { margin-top: 58px; }
+     to { margin-top: 67px; }
+}
+
+@-ms-keyframes arrow_anim {
+   from { margin-top: 58px; }
+     to { margin-top: 67px; }
+}
+
+@-o-keyframes arrow_anim {
+   from { margin-top: 58px; }
+     to { margin-top: 67px; }
+}
+
+@keyframes arrow_anim {
+   from { margin-top: 58px; }
+     to { margin-top: 67px; }
+}
+
+#arrow {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid red;
+  height: 0; 
+  margin: 60px 0px 0px 360px;
+  position: absolute;
+  width: 0; 
+  
+  -webkit-animation: arrow_anim .3s steps(3) infinite;
+  -moz-animation: arrow_anim .3s steps(3) infinite;
+  -ms-animation: arrow_anim .3s steps(3) infinite;
+  -o-animation: arrow_anim .3s steps(3) infinite;
+  animation: arrow_anim .3s steps(3) infinite;
+}
+
+#dialog {
+  height: 70px;
+  background: #1c1c1c;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 0 0 0 6px wheat, 0 0 0 12px #251C00;
+  color: wheat;
+  font-family: "yearIs199x";
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 400px;
+  bottom: 15px;
+  top :15px
+}
+
   </style>
   
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="http://cdn.craig.is/js/mousetrap/mousetrap.min.js?bb7da
+  "></script>
+
   <script>
+
+    //portraits
+    //sleep
+    //waking up
+    //talking1
+    //talking2
+
+    var dialogs = [
+      '... zzzz ...',
+      "...zzzzzz......",
+      "zzzzzzzzzzzzzzzz......zz",
+      "..zzzzz-OH OH Hello! I didn't uh, I didn't see you there. Was just uh, resting my eyes ya know.",
+      "Anywho, you're probably looking at this page because I sent it to you after seeing your job posting!!",
+      "Websites are a little impersonal, so I thought I'd scan my brain and upload a digital version of it here!",
+      "You can find links to my resume and stuff at the bottom, so if you want the TL;DR version look there!",
+      "I'm Nico! I'm a game developer and designer based out of San Francisco currently.",
+      "I come from a programming background, I have a bachelors in Computer Science from San Francisco State.",
+      "I view myself as more of an artist/designer though, creating worlds and experiences is my jam.",
+      "On top of my strong programming background, I have an ecclectic skill set, I really love all parts of development.",
+      "I'm experienced with sprite work, 3d modelling and animation, a touch of shaders, tools dev, you name it. ",
+      "This means I'm a great asset to have on a small multi disciplinary team, I can wear alot of hats!",
+      "Catch me talking about how cool vertex shaders are one second then ludo narraritive systems in emergent gameplay the next!",
+      "A little about my work background!",
+      "While working on my degree I started teaching at an afterschool program specifically geared for programming.",
+      "I loved working with kids (8-18), and after I got my programming chops up a bit I started teaching game dev there.",
+      "This gave me an awesome oppurtunity to share what I was learning with kids, so while teaching there I developed my skills.",
+      "I started doing game jams with friends and alone as often as I could, and instantly got hooked! ",
+      "I had always looked up to solo-devs like Lucas Pope (Papers Please) and Eric Barone (Stardew Valley)...",
+      "Inspired by them, I made sure that I learned as much about as many parts of game dev as I could.",
+      "And then in 2022, I got hired by Game Grumps to work on Homebody, a psychological Horror Game.",
+      "I work(ed) on a small team and really got to spread my wings and learn a bunch about actually finishing and shipping games.",
+      "I was lucky enough to work under Alex Belzer, who had previously worked on God of War at Sony Santa Monica.",
+      "Homebody's where I really cut my teeth, but alas all good contracts must end, so here we are!",
+      "Now I'm working on finishing out some year long projects with some friends, and looking for new projects to help on!",
+      "If I sound like a good fit for your team, feel free to contact my corporeal form through my contact info linked below.",
+      "Thanks so much for getting to know me a bit, I'm just going to rest my eyes a bit now, feel free to hang out as long as you like!",
+      ".....zzzzzzzz....",
+      "..zzz."
+    ]
+
+    var gifs = ["./homebodyGif1.gif","./previewGifs/alibi.gif"]
+
   
       //randomly change the image numbers used
   
@@ -392,34 +532,90 @@
       document.getElementById("bg2").style.opacity = Math.random() / 4 + 0.3 + "";
   
       
-      document.getElementById
-  
-  
-  
-  
-      function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-  
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+    
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+    
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      if(event != null){
+        evt.currentTarget.className += " active";
+
+      }
   }
   
     openCity(event, 'London')
   
+
+    initial = 0;
+    individual = dialogs[initial].split('');
+
+    
+
+function createDiag ( dialog ) {
+  
+  document.getElementById("dialog").onmousedown = function () {}
+  Mousetrap.unbind("enter");
+
+  //TODO: bind these functions to things that cancel the timeout and auto complete
+  
+  for(i = 0; i < dialog.length; i++) {
+    (function(i){
+      setTimeout(function(){
+        $('#dialog').text($('#dialog').text() +   dialog[i]);
+        if (i == dialog.length-1 ) {
+          $('#dialog').prepend('<div id="arrow"></div>');
+          Mousetrap.bind('enter', function() {
+            if (dialogs[initial+1]) {
+              $('#dialog').text('');
+              initial += 1;
+              individual = dialogs[initial].split('');
+              createDiag( individual );
+            }
+          });
+
+          
+          document.getElementById("dialog").onmousedown = function() {
+           
+            if(gifs[initial + 1]){
+              $("#portrait").attr("src",gifs[initial + 1])
+            }
+            
+
+            if (dialogs[initial+1]) {
+              $('#dialog').text('');
+              initial += 1;
+              individual = dialogs[initial].split('');
+              createDiag( individual );
+            }
+            
+          }
+        }
+      }, 35*i);  
+    
+    }(i));
+    
+  }
+
+
+}
+
+createDiag( individual );
+
+
   </script>
   
   
