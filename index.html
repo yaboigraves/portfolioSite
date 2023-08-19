@@ -17,8 +17,9 @@
   
       <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'London')">Nico Graves</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Stuff I've Made</button>
         <button class="tablinks" onclick="openCity(event, 'Tokyo')">Stuff I've Worked On</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Stuff I've Made</button>
+        <button class="tablinks" onclick="openCity(event, 'WorkingOn')">Stuff I'm Working On</button>
       </div>
       
       <!-- Tab content -->
@@ -53,19 +54,28 @@
    
       </div>
       
+
+
+
+
+      
       <div id="Paris" class="tabcontent">
-        <h3 style = "margin: 1.25%; ">Personal Projects</h3>
+        <h2 style = "margin: 1.25%;  text-align: center; ">Personal Projects</h2>
        
         <div class="gallery">
-          <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
+            <a id="myLink" title="Click to do something"
+            href="PleaseEnableJavascript.html" onclick="openCity(event, 'Alibi');return false;">
+
             <img src="./previewGifs//alibi.gif" alt="Cinque Terre" width="600" height="400">
           </a>
           <div class="desc" >
             Alibi
+          
           </div>
-    
           
         </div>
+
+        
   
 <!--         
         <div class="gallery">
@@ -80,14 +90,22 @@
   
   
       </div>
+
+      
       
       <div id="Tokyo" class="tabcontent">
-        <h3 style = "margin: 1.25%; "> Professional Projects</h3>
+        <h2 style = "margin: 1.25%; text-align: center; "> Professional Projects</h2>
        
         <div class="gallery">
-          <a target="_blank" href="https://store.steampowered.com/app/1959350/Homebody/">
-            <img src="./homebodyGif1.gif" alt="Cinque Terre" width="600" height="400">
-          </a>
+
+
+          <a id="myLink" title="Click to do something"
+          href="PleaseEnableJavascript.html" onclick="openCity(event, 'Homebody');return false;">
+
+          <img src="./homebodyGif1.gif"Cinque Terre" width="600" height="400">
+        </a>
+
+
           <div class="desc" >
             Homebody
             <br>
@@ -101,6 +119,150 @@
           
         </div>
   
+  
+      </div>
+
+      <div id="WorkingOn" class="tabcontent">
+        <h2 style = "margin: 1.25%; text-align: center;"> Current MFX_CO Projects</h2>
+       
+        <div class="gallery">
+
+          <a id="myLink" title="Click to do something"
+          href="PleaseEnableJavascript.html" onclick="openCity(event, 'Metalfingaz');return false;">
+
+          <img src="./previewGifs/metalfingaz1.png"Cinque Terre" width="600" height="400">
+        </a>
+
+          <div class="desc" >
+            METALFINGAZ
+            <br>
+    
+
+          </div>
+      
+    
+          
+        </div>
+  
+        <div class="gallery">
+          
+          <a id="myLink" title="Click to do something"
+          href="PleaseEnableJavascript.html" onclick="openCity(event, 'MFX_RPG');return false;">
+
+          <img src="./previewGifs/rpg2.png"Cinque Terre" width="600" height="400">
+        </a>
+          <div class="desc" >
+            Untitled RPG
+            <br>
+    
+
+          </div>
+      
+    
+          
+        </div>
+  
+      </div>
+
+      
+      <div id="Metalfingaz" class="tabcontent">
+        <h2 style = "margin: 1.25%;text-align: center; "> Metalfingaz</h2>
+       
+
+        <div class="gallery" style="width: 50%;">
+            <img src="./previewGifs/metalfingaz.png" alt="Cinque Terre" width="600" height="400">
+        
+        </div>
+
+        <div>
+          <p>- A couch co-op versus rhythm game. Players try to drum out rhythms that the other player must match!</p>
+          <p>- Developed mainly as a solo project, with some support from small indie collective (MFX) help.</p>
+          <p>- Made in Unity badly, then made in Unity ok, about to be made very good hopefully in Godot!</p>
+        </div>
+    
+    
+ 
+  
+      </div>
+
+
+      <div id="MFX_RPG" class="tabcontent">
+        <h2 style = "margin: 1.25%;text-align: center; "> untitled rpg</h2>
+       
+
+        <div class="gallery" style="width: 50%;">
+            <img src="./previewGifs/recstore2.png" alt="Cinque Terre" height="300">
+        
+        </div>
+
+        <div>
+          <p>- A long term passion project, an rpg about music and communities that flock around it. Set in a stagnant world where music is gatekept by tech giants.</p>
+          <p>- Combines elements of games and manga we love, like Ping Pong, Samurai Champloo, Jet Set Radio, Parappa the Rapper, Persona, Paper Mario, and more.</p>
+          <p>- Made with MFX indie collective (Jalen Hernandez (art), Jerry Joiner (design/writing), Aaron Patrick (3d), and yours truly (everything else plus all the other roles too).</p>
+          <p>- Prototyped and developed in Unity badly, and currently in development in godot.</p>
+        </div>
+      </div>
+
+      <div id="Alibi" class="tabcontent">
+        <h2 style = "margin: 1.25%;text-align: center; "> Alibi</h2>
+       
+
+        <div class="gallery">
+          <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
+            <img src="./previewGifs/alibi.gif" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc" >
+            Play on Itch.io
+            <br>
+          </div>
+        </div>
+
+        <div>
+          <p>- A short, noir inspired interrogative whodunnit set in a surreal 1960's San Francisco.</p>
+          <p>- Created in one week with Zane Schaeffer (art) for Brackeys Game Jam 2020.1.</p>
+          <p>- Rated 33rd overall of 697 entries, and 7th for audio.</p>
+          <p>- Made with Unity.</p>
+
+        </div>
+    
+        <div>
+          <img src = "./previewGifs/alibi2.png" width="300px" > </img>
+          <img src = "./previewGifs/alibi3.png" width="300px"> </img>
+          <img src = "./previewGifs/alibi4.png" width="300px"> </img>
+        </div>
+  
+      </div>
+
+
+
+
+      <div id="Homebody" class="tabcontent">
+        <h2 style = "margin: 1.25%;text-align: center; "> Homebody</h2>
+       
+
+        <div class="gallery">
+          <a target="_blank" href="https://store.steampowered.com/app/1959350/Homebody/">
+            <img src="./homebodyGif1.gif" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc" >
+            Get on Steam!
+            <br>
+          </div>
+        </div>
+
+        <div>
+          <p>- A retro inspired psychological horror puzzler, about friendships and mental health. Created by Game Grumps Inc and Rogue Games.</p>
+          <p>- Time loop escape room, with a murderous killer stalking you.</p>
+          <p>- I worked as a generalist unity developer with a UI focus on this project.</p>
+          <p>- Very small (3 person core including me) team, so I wore alot of hats!.</p>
+          <p>- Shipped on multiple platforms, and 6 languages on launch, which was a fun challenge as UI engineer!</p>
+        </div>
+    
+        <div>
+          <img src = "./previewGifs/homebody1.jpg.jpeg" width="300px" > </img>
+          <img src = "./previewGifs/homebody2.jpg" width="300px"> </img>
+          <img src = "./previewGifs/homebody3.jpg" width="300px"> </img>
+        </div>
   
       </div>
   <!-- 
@@ -145,7 +307,7 @@
       
         
       <div class = "footer">
-        <a href="Design Resume.pdf" target="_blank" download=""> resume</a> |
+        <a href="Nico Graves Resume.pdf" target="_blank" download=""> resume</a> |
         <a href=" https://github.com/yaboigraves" target="_blank"> github</a> |
         <a href="https://gravesmakesart.itch.io/" target="_blank"> itch.io</a> |
         <a href="https://twitter.com/gravesmakesart" target="_blank"> twitter</a> |
@@ -165,11 +327,13 @@
   
   <style>
   /* Style the tab */
+
+   
+
   .tab {
     overflow: hidden;
     border: 0px solid #ccc;
     border-radius: 25px;
-    margin: 1%;
     display:flex;
 
   }
@@ -215,7 +379,9 @@
   
   }
   
-  
+  img{
+    border-radius: 10px;
+  }
   
    a{
     text-decoration: none;
@@ -549,8 +715,10 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       ["Since 2018 we've been slowly chipping away at an RPG game about people's relationships to music too!"],
       ["And then in 2022, I got hired by Game Grumps to work on Homebody, a psychological Horror Game.","./previewGifs/nicktalkingexcited.gif"],
       ["I work(ed) on a small team and really got to spread my wings and learn a bunch about actually finishing and shipping games.","./previewGifs/nicktalking.gif"],
-      ["I would describe my role on that project as a technical designer, though I wore many hats."],
-      ["Primarily, I took existing base systems and extended them breadth and depth wise."],
+      ["I would describe my role on that project as a technical designer and ui engineer, though I wore many hats."],
+      ["I implemented the games entire UI, which was a challenge because the game shipped on all platforms at launch AND was localized in 6 languages."],
+      ["The game has alot of menus and is very narraritive, so this was a fun challenge that I felt I rose to the occasion of!"],
+      ["I also took existing base systems and extended them breadth and depth wise."],
       ["Building new extensions to core systems, designing content in those systems, refining their feel."],
       ["I was lucky enough to work with a super talented team that had years of experience. I learned a lot!"],
       ["Homebody's where I really cut my teeth, but alas all good contracts must end, so here we are!"],
@@ -579,7 +747,7 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       [".zzzzzz....","./previewGifs/sleepynick.gif","sleepynick.gif"]
     ]
 
-  
+
       //randomly change the image numbers used
   
       let img1 = Math.floor(Math.random() * 160)
