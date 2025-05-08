@@ -1,6 +1,7 @@
 
 <html>
   <head>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
     <title>HIRE ME PLS</title> 
     <link rel="icon" type="image/x-icon" href="">
 
@@ -110,7 +111,7 @@
             Homebody
             <br>
             
-            <div style ="font-size:x-small;">With Game Grumps INC</div>
+            <div style ="font-size:small;">UI/Gameplay Engineer</div>
 
 
           </div>
@@ -118,6 +119,32 @@
     
           
         </div>
+
+
+        <div class="gallery">
+
+
+          <a id="myLink" title="Click to do something"
+          href="PleaseEnableJavascript.html" onclick="openCity(event, 'Elsewhere');return false;">
+
+          <img src="./homebodyGif1.gif"Cinque Terre" width="600" height="400">
+        </a>
+
+
+          <div class="desc" >
+            Elsewhere
+            <br>
+            
+            <div style ="font-size:small;">Founding Engineer</div>
+
+
+          </div>
+      
+    
+          
+        </div>
+  
+
   
   
       </div>
@@ -258,14 +285,48 @@
           <p>- Shipped on multiple platforms, and 6 languages on launch, which was a fun challenge as UI engineer!</p>
         </div>
     
-        <div>
-          <img src = "./previewGifs/homebody1.jpg.jpeg" width="300px" > </img>
-          <img src = "./previewGifs/homebody2.jpg" width="300px"> </img>
-          <img src = "./previewGifs/homebody3.jpg" width="300px"> </img>
+        <div class ="preview_gallery">
+          <img src = "./previewGifs/homebody1.jpg.jpeg" width="400px" > </img>
+          <img src = "./previewGifs/homebody2.jpg" width="400px"> </img>
+          <img src = "./previewGifs/homebody3.jpg" width="400px"> </img>
         </div>
   
       </div>
-  <!-- 
+  
+  
+      <div id="Elsewhere" class="tabcontent">
+        <h2 style = "margin: 1.25%;text-align: center; "> Elsewhere</h2>
+       
+
+        <div class="gallery">
+          <a target="_blank" href="https://store.steampowered.com/app/1959350/Homebody/">
+            <img src="./homebodyGif1.gif" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc" >
+            Get on Steam!
+            <br>
+          </div>
+        </div>
+
+        <div>
+          <p>- A retro inspired psychological horror puzzler, about friendships and mental health. Created by Game Grumps Inc and Rogue Games.</p>
+          <p>- Time loop escape room, with a murderous killer stalking you.</p>
+          <p>- I worked as a generalist unity developer with a UI focus on this project.</p>
+          <p>- Very small (3 person core including me) team, so I wore alot of hats!.</p>
+          <p>- Shipped on multiple platforms, and 6 languages on launch, which was a fun challenge as UI engineer!</p>
+        </div>
+    
+        <div class ="preview_gallery">
+          <img src = "./previewGifs/elsewhere_1.png" width="400px" > </img>
+          <img src = "./previewGifs/elsewhere_2.png" width="400px"> </img>
+          <img src = "./previewGifs/elsewhere_3.png" width="400px"> </img>
+        </div>
+  
+      </div>
+  
+  
+  
+      <!-- 
       <div class = "texttt">
         <h1> nico Graves</h1>
         <p style="font-size: 75%;">A passionate young go getter with a heart of gold, and an overactive imagination.</p>
@@ -446,6 +507,20 @@
       font-size: 36;
       font-family: "name";
     }
+
+    #fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
+}
   
   
     a{
@@ -677,6 +752,10 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
     //talking1
     //talking2
 
+    //this is really fucking annoying to read from, im going to just write a simple parser so i can drop an md file instead
+    //the markdown can still be parsed i think
+
+
     var dialogs = [
       ['... zzzz ...',"sleepynick.gif"],
       ["...zzzzzz......"],
@@ -776,9 +855,9 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       document.getElementById("bg1").style.backgroundImage = "url(./bgs/" + img1 + ".png)";
       document.getElementById("bg2").style.backgroundImage = "url(./bgs/" + img2 + ".png)";
       document.getElementById("bg2").style.opacity = Math.random() / 4 + 0.3 + "";
-  
       
-
+      
+      
     function openCity(evt, cityName) {
       // Declare all variables
       var i, tabcontent, tablinks;
@@ -808,6 +887,7 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
 
     initial = 0;
     individual = dialogs[initial][0].split('');
+
 
 
 
@@ -868,8 +948,21 @@ function createDiag ( dialog ) {
 
 }
 
-createDiag( individual );
 
+function getPics() {} //just for this demo
+  const imgs = document.querySelectorAll('.preview_gallery img');
+  const fullPage = document.querySelector('#fullpage');
+
+  imgs.forEach(img => {
+    img.addEventListener('click', function() {
+      fullPage.style.backgroundImage = 'url(' + img.src + ')';
+      fullPage.style.display = 'block';
+    });
+});
+
+
+createDiag( individual );
+getPics()
 
   </script>
   
