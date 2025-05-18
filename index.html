@@ -1,3 +1,8 @@
+<!-- 
+ Hello! If you're snooping the source code for this, yes it is very frankensteined! 
+ Feel free to take anything you want from the source, and I swear this massive cluster-f is by no means a reflection of my game engineering skills!
+-->
+
 
 <html>
   <head>
@@ -17,14 +22,14 @@
     <div class = "textContainer">
   
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">Nico Graves</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Stuff I've Worked On</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Stuff I've Made</button>
+        <button class="tablinks" onclick="openCity(event, 'Nico')">Nico Graves</button>
+        <button class="tablinks" onclick="openCity(event, 'ProProjects')">Stuff I've Worked On</button>
+        <button class="tablinks" onclick="openCity(event, 'PerProjects')">Stuff I've Made</button>
         <button class="tablinks" onclick="openCity(event, 'WorkingOn')">Stuff I'm Working On</button>
       </div>
       
       <!-- Tab content -->
-      <div id="London" class="tabcontent">
+      <div id="Nico" class="tabcontent">
 
 
         <img src = "./previewGifs/sleepynick.gif" id = "portrait" style = "display: block;
@@ -57,7 +62,7 @@
     
 
       
-      <div id="Paris" class="tabcontent">
+      <div id="PerProjects" class="tabcontent">
         <h2 style = "margin: 1.25%;  text-align: center; ">Personal Projects</h2>
        
         <div class="gallery">
@@ -80,7 +85,7 @@
 
       
       
-      <div id="Tokyo" class="tabcontent">
+      <div id="ProProjects" class="tabcontent">
         <h2 style = "margin: 1.25%; text-align: center; "> Professional Projects</h2>
        
         <div class="gallery">
@@ -224,10 +229,9 @@
           <p style='font-family:"dialogue_content";'>- Created in one week with Zane Schaeffer (art) for Brackeys Game Jam 2020.1.</p>
           <p style='font-family:"dialogue_content";'>- Rated 33rd overall of 697 entries, and 7th for audio.</p>
           <p style='font-family:"dialogue_content";'>- Made with Unity.</p>
-
         </div>
     
-        <div>
+        <div class = "preview_gallery">
           <img src = "./previewGifs/alibi2.png" width="300px" > </img>
           <img src = "./previewGifs/alibi3.png" width="300px"> </img>
           <img src = "./previewGifs/alibi4.png" width="300px"> </img>
@@ -235,13 +239,8 @@
   
       </div>
 
-
-
-
       <div id="Homebody" class="tabcontent">
         <h2 style = "margin: 1.25%;text-align: center; "> Homebody</h2>
-       
-
         <div class="gallery">
           <a target="_blank" href="https://store.steampowered.com/app/1959350/Homebody/">
             <img src="./homebodyGif1.gif" alt="Cinque Terre" width="600" height="400">
@@ -272,7 +271,6 @@
       <div id="Elsewhere" class="tabcontent">
         <h2 style = "margin: 1.25%;text-align: center; "> Elsewhere</h2>
        
-
         <div class="gallery">
           <a target="_blank" href="https://elsewhere.zone">
             <img src="./previewGifs/elsewhere_preview.gif" alt="Cinque Terre" width="600" height="400">
@@ -296,17 +294,15 @@
           <img src = "./previewGifs/elsewhere_2.png" width="400px"> </img>
           <img src = "./previewGifs/elsewhere_3.png" width="400px"> </img>
         </div>
-  
       </div>
   
       
       <div class = "footer">
-        <a href="NicoGravesResume2024.pdf" target="_blank" download=""> resume</a> |
+        <a href="NicoGravesResume2025.pdf" target="_blank" download=""> resume</a> |
         <a href=" https://github.com/yaboigraves" target="_blank"> github</a> |
         <a href="https://gravesmakesart.itch.io/" target="_blank"> itch.io</a> |
         <a href="https://soundcloud.com/gravesmakesart" target="_blank"> soundcloud</a>
       </div>
-      
     </div>
     
   
@@ -825,7 +821,7 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       }
   }
   
-    openCity(event, 'London')
+    openCity(event, 'Nico')
   
 
     initial = 0;
@@ -907,12 +903,12 @@ function getPics() {} //just for this demo
 createDiag( individual );
 getPics()
 
-  </script>
+</script>
   
   
   
   
-  </html>
+</html>
   
   
   
