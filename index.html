@@ -1,6 +1,12 @@
+<!-- 
+ Hello! If you're snooping the source code for this, yes it is very frankensteined! 
+ Feel free to take anything you want from the source, and I swear this massive cluster-f is by no means a reflection of my game engineering skills!
+-->
+
 
 <html>
   <head>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
     <title>HIRE ME PLS</title> 
     <link rel="icon" type="image/x-icon" href="">
 
@@ -16,14 +22,14 @@
     <div class = "textContainer">
   
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">Nico Graves</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Stuff I've Worked On</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Stuff I've Made</button>
+        <button class="tablinks" onclick="openCity(event, 'Nico')">Nico Graves</button>
+        <button class="tablinks" onclick="openCity(event, 'ProProjects')">Stuff I've Worked On</button>
+        <button class="tablinks" onclick="openCity(event, 'PerProjects')">Stuff I've Made</button>
         <button class="tablinks" onclick="openCity(event, 'WorkingOn')">Stuff I'm Working On</button>
       </div>
       
       <!-- Tab content -->
-      <div id="London" class="tabcontent">
+      <div id="Nico" class="tabcontent">
 
 
         <img src = "./previewGifs/sleepynick.gif" id = "portrait" style = "display: block;
@@ -53,13 +59,10 @@
       </h6>
    
       </div>
-      
-
-
-
+    
 
       
-      <div id="Paris" class="tabcontent">
+      <div id="PerProjects" class="tabcontent">
         <h2 style = "margin: 1.25%;  text-align: center; ">Personal Projects</h2>
        
         <div class="gallery">
@@ -75,25 +78,14 @@
           
         </div>
 
-        
-  
-<!--         
-        <div class="gallery">
-          <a target="_
-          lank" href="">
-            <img src="./previewGifs/gonefish.gif" alt="Cinque Terre" width="600" height="400">
-          </a>
-          <div class="desc" >Gone Fishing</div>
-
-        </div> -->
-  
+      
   
   
       </div>
 
       
       
-      <div id="Tokyo" class="tabcontent">
+      <div id="ProProjects" class="tabcontent">
         <h2 style = "margin: 1.25%; text-align: center; "> Professional Projects</h2>
        
         <div class="gallery">
@@ -110,7 +102,7 @@
             Homebody
             <br>
             
-            <div style ="font-size:x-small;">With Game Grumps INC</div>
+            <div style ="font-size:medium;">UI/Gameplay Engineer</div>
 
 
           </div>
@@ -118,12 +110,27 @@
     
           
         </div>
-  
-  
+
+
+        <div class="gallery">
+
+
+          <a id="myLink" title="Click to do something"
+          href="PleaseEnableJavascript.html" onclick="openCity(event, 'Elsewhere');return false;">
+
+          <img src="./previewGifs/elsewhere_preview.gif"Cinque Terre" width="600" height="400">
+        </a>
+
+          <div class="desc" >
+            Elsewhere
+            <br>
+            <div style ="font-size:medium;">Founding Engineer</div>
+          </div>
+        </div>
       </div>
 
       <div id="WorkingOn" class="tabcontent">
-        <h2 style = "margin: 1.25%; text-align: center;"> Current MFX_CO Projects</h2>
+        <h2 style = "margin: 1.25%; text-align: center;"> Misc Projects</h2>
        
         <div class="gallery">
 
@@ -175,9 +182,9 @@
         </div>
 
         <div>
-          <p>- A couch co-op versus rhythm game. Players try to drum out rhythms that the other player must match!</p>
-          <p>- Developed mainly as a solo project, with some support from small indie collective (MFX) help.</p>
-          <p>- Made in Unity badly, then made in Unity ok, about to be made very good hopefully in Godot!</p>
+          <p style='font-family:"dialogue_content";'>- A couch co-op versus rhythm game. Players try to drum out rhythms that the other player must match!</p>
+          <p style='font-family:"dialogue_content";'>- Developed mainly as a solo project, with some support from small indie collective (MFX) help.</p>
+          <p style='font-family:"dialogue_content";'>- Made in Unity, then ported to Godot.</p>
         </div>
     
     
@@ -196,10 +203,10 @@
         </div>
 
         <div>
-          <p>- A long term passion project, an rpg about music and communities that flock around it. Set in a stagnant world where music is gatekept by tech giants.</p>
-          <p>- Combines elements of games and manga we love, like Ping Pong, Samurai Champloo, Jet Set Radio, Parappa the Rapper, Persona, Paper Mario, and more.</p>
-          <p>- Made with MFX indie collective (Jalen Hernandez (art), Jerry Joiner (design/writing), Aaron Patrick (3d), and yours truly (everything else plus all the other roles too).</p>
-          <p>- Prototyped and developed in Unity badly, and currently in development in godot.</p>
+          <p style='font-family:"dialogue_content";'>- A long term passion project, an rpg about music and communities that flock around it. Set in a stagnant world where music is gatekept by tech giants.</p>
+          <p style='font-family:"dialogue_content";'>- Combines elements of games and manga we love, like Ping Pong, Samurai Champloo, Jet Set Radio, Parappa the Rapper, Persona, Paper Mario, and more.</p>
+          <p style='font-family:"dialogue_content";'>- Made with MFX indie collective (Jalen Hernandez (art), Jerry Joiner (design/writing), Aaron Patrick (3d), and yours truly (everything else plus all the other roles too).</p>
+          <p style='font-family:"dialogue_content";'>- Prototyped and developed in Unity badly, and currently in development in godot.</p>
         </div>
       </div>
 
@@ -218,14 +225,13 @@
         </div>
 
         <div>
-          <p>- A short, noir inspired interrogative whodunnit set in a surreal 1960's San Francisco.</p>
-          <p>- Created in one week with Zane Schaeffer (art) for Brackeys Game Jam 2020.1.</p>
-          <p>- Rated 33rd overall of 697 entries, and 7th for audio.</p>
-          <p>- Made with Unity.</p>
-
+          <p style='font-family:"dialogue_content";'>- A short, noir inspired interrogative whodunnit set in a surreal 1960's San Francisco.</p>
+          <p style='font-family:"dialogue_content";'>- Created in one week with Zane Schaeffer (art) for Brackeys Game Jam 2020.1.</p>
+          <p style='font-family:"dialogue_content";'>- Rated 33rd overall of 697 entries, and 7th for audio.</p>
+          <p style='font-family:"dialogue_content";'>- Made with Unity.</p>
         </div>
     
-        <div>
+        <div class = "preview_gallery">
           <img src = "./previewGifs/alibi2.png" width="300px" > </img>
           <img src = "./previewGifs/alibi3.png" width="300px"> </img>
           <img src = "./previewGifs/alibi4.png" width="300px"> </img>
@@ -233,13 +239,8 @@
   
       </div>
 
-
-
-
       <div id="Homebody" class="tabcontent">
         <h2 style = "margin: 1.25%;text-align: center; "> Homebody</h2>
-       
-
         <div class="gallery">
           <a target="_blank" href="https://store.steampowered.com/app/1959350/Homebody/">
             <img src="./homebodyGif1.gif" alt="Cinque Terre" width="600" height="400">
@@ -251,77 +252,59 @@
         </div>
 
         <div>
-          <p>- A retro inspired psychological horror puzzler, about friendships and mental health. Created by Game Grumps Inc and Rogue Games.</p>
-          <p>- Time loop escape room, with a murderous killer stalking you.</p>
-          <p>- I worked as a generalist unity developer with a UI focus on this project.</p>
-          <p>- Very small (3 person core including me) team, so I wore alot of hats!.</p>
-          <p>- Shipped on multiple platforms, and 6 languages on launch, which was a fun challenge as UI engineer!</p>
+          <p style='font-family:"dialogue_content";'>- A retro inspired psychological horror puzzler, about friendships and mental health. Created by Game Grumps Inc and Rogue Games.</p>
+          <p style='font-family:"dialogue_content";'>- Time loop escape room, with a murderous killer stalking you.</p>
+          <p style='font-family:"dialogue_content";'>- I worked as a generalist unity developer with a UI focus on this project.</p>
+          <p style='font-family:"dialogue_content";'>- Very small (3 person core including me) team, so I wore alot of hats!</p>
+          <p style='font-family:"dialogue_content";'>- Shipped on multiple platforms, and 6 languages on launch, which was a fun challenge as UI engineer!</p>
         </div>
     
-        <div>
-          <img src = "./previewGifs/homebody1.jpg.jpeg" width="300px" > </img>
-          <img src = "./previewGifs/homebody2.jpg" width="300px"> </img>
-          <img src = "./previewGifs/homebody3.jpg" width="300px"> </img>
+        <div class ="preview_gallery">
+          <img src = "./previewGifs/homebody1.jpg.jpeg" width="400px" > </img>
+          <img src = "./previewGifs/homebody2.jpg" width="400px"> </img>
+          <img src = "./previewGifs/homebody3.jpg" width="400px"> </img>
         </div>
   
       </div>
-  <!-- 
-      <div class = "texttt">
-        <h1> nico Graves</h1>
-        <p style="font-size: 75%;">A passionate young go getter with a heart of gold, and an overactive imagination.</p>
+  
+  
+      <div id="Elsewhere" class="tabcontent">
+        <h2 style = "margin: 1.25%;text-align: center; "> Elsewhere</h2>
+       
+        <div class="gallery">
+          <a target="_blank" href="https://elsewhere.zone">
+            <img src="./previewGifs/elsewhere_preview.gif" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc" >
+            2025 Demo Landing Page
+            <br>
+          </div>
+        </div>
+
+        <div>
+          <p style='font-family:"dialogue_content";'>- A networked co-op action roguelike set in your dreams. Confront and defeat your Jungian Shadow with the help of your Archetypes.</p>
+          <p style='font-family:"dialogue_content";'>- Hades with your friends! Tight action gameplay loop with explosive upgrade synergies.</p>
+          <p style='font-family:"dialogue_content";'>- Lead engineering efforts on a small 5 person team with several contractors under me. I either designed or worked on every feature.</p>
+          <p style='font-family:"dialogue_content";'>- Created using the Godot Game Engine. I acted as a liason between the team and the Godot development team, making sure we could cook!</p>
+          <p style='font-family:"dialogue_content";'>- Project was sadly cancelled after failing to receive additional funding, development lasted about a year and a half.</p>
+        </div>
     
-        <h2>Stuff I've Made</h2>
-        <br>
-  
-          <div class="gallery">
-            <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
-              <img src="./alibi.gif" alt="Cinque Terre" width="600" height="400">
-            </a>
-            <div class="desc" >Alibi</div>
-          </div>
-  
-  
-          <div class="gallery">
-            <a target="_blank" href="http://gone.fish">
-              <img src="./betterFish.gif" alt="Cinque Terre" width="600" height="400">
-            </a>
-            <div class="desc" >Gone Fishing</div>
-          </div>
-  
-  
-          <!-- <div class="gallery">
-            <a target="_blank" href="https://gravesmakesart.itch.io/condor">
-              <img src="./condor.gif" alt="Forest" width="600" height="400">
-            </a>
-            <div class="desc">Condor</div>
-          </div> -->
-  
-  
-  
+        <div class ="preview_gallery">
+          <img src = "./previewGifs/elsewhere_1.png" width="400px" > </img>
+          <img src = "./previewGifs/elsewhere_2.png" width="400px"> </img>
+          <img src = "./previewGifs/elsewhere_3.png" width="400px"> </img>
+        </div>
+      </div>
   
       
-  
-  
-      <!-- </div>  -->
-  
-      
-        
       <div class = "footer">
-        <a href="NicoGravesResume2024.pdf" target="_blank" download=""> resume</a> |
+        <a href="NicoGravesResume2025.pdf" target="_blank" download=""> resume</a> |
         <a href=" https://github.com/yaboigraves" target="_blank"> github</a> |
         <a href="https://gravesmakesart.itch.io/" target="_blank"> itch.io</a> |
-        <a href="https://twitter.com/gravesmakesart" target="_blank"> twitter</a> |
-        <a href="https://www.instagram.com/lord_of_the_mids/" target="_blank"> instagram</a> |
         <a href="https://soundcloud.com/gravesmakesart" target="_blank"> soundcloud</a>
-        
-        </div>
-      
+      </div>
     </div>
     
-  
-  
-  
-  
   
   
   
@@ -446,6 +429,20 @@
       font-size: 36;
       font-family: "name";
     }
+
+    #fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
+}
   
   
     a{
@@ -466,8 +463,15 @@
   
       @font-face {
           font-family: "yearis199x";
-          src: url("./fonts/Twoson.woff") format("woff");
+          src: url("./fonts/KiwiSoda.ttf")
       }
+
+      @font-face{
+        font-family : "dialogue_content";
+        src: url("./fonts/VCR_OSD_MONO_1.001.ttf")
+
+      }
+      
   
       .textContainer{
           /* background-color:black; */
@@ -632,21 +636,22 @@
   animation: arrow_anim .3s steps(3) infinite;
 }
 
+
 #dialog {
-  height: 70px;
+  height: 90px;
   background: #1c1c1c;
   margin: auto;
   border-radius: 25px;
   box-shadow: 0 0 0 6px wheat, 0 0 0 12px #251C00;
   color: wheat;
-  font-family: "yearIs199x";
+  font-family: "dialogue_content";
   font-size: 16px;
   font-weight: bold;
   padding: 20px 20px 20px 20px;
   position: relative;
   text-transform: uppercase;
   word-spacing: 3px;
-  width: 400px;
+  width: 500px;
   bottom: 15px;
   top :15px
 }
@@ -677,6 +682,10 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
     //talking1
     //talking2
 
+    //this is really annoying to read from, im going to just write a simple parser so i can drop an md file instead
+    //the markdown can still be parsed i think
+
+
     var dialogs = [
       ['... zzzz ...',"sleepynick.gif"],
       ["...zzzzzz......"],
@@ -687,20 +696,21 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       ["...Impervious to the flow of time and space, this snapshot of my consciousness will linger in reality far longer than my flesh prison."],
       ["....","./previewGifs/nickidle.gif"],
       ["Anyways, you can find links to my resume and stuff at the bottom, so if you want the TL;DR version look there!","./previewGifs/nicktalkingexcited.gif"],
-      ["I'm Nico! I'm a game developer and designer based out of San Francisco currently.","./previewGifs/nicktalking.gif"],
-      ["I have a programming background, I received my bachelors in Computer Science from San Francisco State in 2019."],
-      ["I view myself as more of an artist/designer though, creating worlds and experiences is my jam."],
-      ["I have a very wide range of interests, music, art, philosophy, math, so game dev is really a perfect job for me!"],
-      ["Design wise, games to me are these magical experience portals that can capture stories in this almost Gonzo-Journalism-Like way.","./previewGifs/nicktalkingexcited.gif"],
+      ["I'm Nico! I'm a game developer and designer based out of San Francisco.","./previewGifs/nicktalking.gif"],
+      ["I have an engineering backbone, I received my bachelors in Computer Science from San Francisco State in 2019."],
+      ["I've been running tabletop campaigns since I was a kid, game design came naturally to me and has been a lifelong passion!"],
+      ["I'm also quite an eclectic person. I love music, art, philosophy, and math, so game dev is really a perfect craft for me!"],
       ["The ability to create stories and worlds that are *truly* immersive is just so fascinating to me, its magic in real life. ","./previewGifs/nicktalking.gif"],
-      ["Some of my favorite games are those that bend the rules of what a story is, stuff like dwarf fortress or LSD Dream Simulator!","./previewGifs/nicktalkingexcited.gif"],
+      ["I try my best to consume as much knowledge as I can, I love learning new tricks, tools, and techniques!","./previewGifs/nicktalkingexcited.gif"],
+      ["Whether it's seeing what 3D animators are working on, dreaming with designers, or asking dumb questions to marketers, I love the entire game dev process.","./previewGifs/nicktalkingexcited.gif"],
       ["Music has always been a passion of mine, in my free time I'm making jazz, prog rock, ambient music, hip hop beats, whatever I'm feelin.","./previewGifs/nicktalking.gif"],
-      ["On the graphics side of things, I'm comfortable writing shaders and using blender for models here and there. "],
-      ["I tend to approach graphics as a problem to be solved through effective stylization, rather than reaching for fidelity."],
-      ["Jet Set Radio, Hylics, Paper Mario, Return of The Obra Dinn, stuff like that. If you can't tell I like cell shading."],
-      ["On the programming front, most of my experience is with C#, but I'm also comfortable with javascript and python."],
-      ["I've been using Unity for about 6 years, and I've spent the last year and a half mastering Godot!"],
-      ["In summary, I'm a great asset to have on a small multi disciplinary team, I can wear a lot of hats!","./previewGifs/nicktalkingexcited.gif"],
+      ["Onto my hard skills, I'm a confident engineer and architect who's built entire game systems by myself that have needed to scale for years of development."],
+      ["I've worked for 4 years as a Unity Developer in various contract roles, and 1 and a half years as a proffessional full time Godot developer."],
+      ["I'm comfortable working in frameworks and game engines, I've worked on contract gigs with simple frameworks, custom engines, and of course Unity and Godot."],
+      ["I know how to build and mantain scaleable and performant systems, manage version control workflows, and help with CLI and automated builds."],
+      ["I'm comfortable prototyping and working with 3D assets, and have worked very closely with 3D artists to help build solutions for beautiful experiences."],
+      ["I'm a highly effective communicator, and have been told I'm an asset to have in any discussion. Whether it be architecture, production goals, or design ideas, lets talk!"],
+      ["In summary, I'm a great asset to have on both small and large teams!","./previewGifs/nicktalkingexcited.gif"],
       ["How about a little about my work background!","./previewGifs/nicktalking.gif"],
       ["While working on my degree I started teaching at an afterschool program specifically geared for programming."],
       ["I loved working with kids (8-18), and after I got my programming chops up a bit I started teaching game dev there."],
@@ -708,21 +718,29 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       ["I started doing game jams with friends and alone as often as I could, and instantly got hooked! "],
       ["I had always looked up to solo-devs like Lucas Pope (Papers Please) and Eric Barone (Stardew Valley)..."],
       ["Inspired by them, I made sure that I learned as much about as many parts of game dev as I could."],
-      ["With a couple friends I started a small game dev team which we call MFX."],
-      ["We all have super different skillsets, but we all share very similar aesthetic visions for projects, so we work together!"],
-      ["I handle most of the design and programming, and am also in something of a leadership role keeping the games visions coherent."],
-      ["We're currently working on finishing a parappa inspired versus rhythm game about Hip-Hop fingerdrumming"],
-      ["Since 2018 we've been slowly chipping away at an RPG game about people's relationships to music too!"],
+      ["While teaching I worked on a variety of personal projects, game jams, and small contract work for friends. This helped me build out my portfolio and learn!"],
       ["And then in 2022, I got hired by Game Grumps to work on Homebody, a psychological Horror Game.","./previewGifs/nicktalkingexcited.gif"],
       ["I work(ed) on a small team and really got to spread my wings and learn a bunch about actually finishing and shipping games.","./previewGifs/nicktalking.gif"],
       ["I would describe my role on that project as a technical designer/gameplay programmer and ui engineer, I wore many hats."],
       ["I implemented the games entire UI, which was a challenge because the game shipped on all platforms at launch AND was localized in 6 languages."],
-      ["The game has alot of menus and is very narraritive, so this was a fun challenge that I felt I rose to the occasion of!"],
+      ["The game has alot of menus and is very narrative, so this was a fun challenge that I felt I rose to the occasion of!"],
       ["I also took existing base systems and extended them breadth and depth wise."],
       ["Building new extensions to core systems, designing content in those systems, refining their feel."],
-      ["I was lucky enough to work with a super talented team that had years of experience. I learned a lot!"],
-      ["Homebody's where I really cut my teeth, but alas all good contracts must end, so here we are!"],
-      ["Now I'm working on finishing out some year long projects with some friends, doing contract jobs, and looking for new projects to help on."],
+      ["I was lucky enough to work under a former Sony Santa Monica engineer, who acted as a fantastic early mentor to me."],
+      ["After Homebody launched in June 2023, I spent the rest of 2023 acting as a contractor on a variety of small indie projects."],
+      ["I helped design a Lua scripting and modding framework for an in development punch-out inspired game."],
+      ["I also worked as a Unity contractor again helping oversee development on a rhythm action roguelike for several months as well."],
+      ["In January 2024 I had actually managed to find a contract to hire Godot engineer job!","./previewGifs/nicktalkingexcited.gif"],
+      ["A venture backed start up called Elsewhere brought me on board to help with development on a co-op action roguelike inspired by Hades."],
+      ["I took over the codebase and acted as the core founding engineer for the studio for about a year and a half. It was awesome!",,"./previewGifs/nicktalking.gif"],
+      ["The team was very small, and I acted as the lead engineer on the project. It was a small team, but the project was very ambitious!"],
+      ["I had a hand in either designing, architecting, or engineering almost every system in the game."],
+      ["I also helped with a variety of studio ops, such as production, task management, version control management, hiring, and more!"],
+      ["It was alot of work with many late nights and long hours, but it was a truly amazing experience to cook so hard. I had a blast."],
+      ["Sadly the game did not manage to receive additional funding it needed in 2025, and the project had to be dropped."],
+      ["That being said, I'm so grateful for the opportunity to have worked on Elsewhere, and cherish the relationships I made with the entire team"],
+      ["So here we are! I'm now looking for my next steps in the games industry. I'm open to a wide variety of roles currently."],
+      ["While the majority of my experience is gameplay programming, I love most aspects of development. Tools dev, infrastructure, enemy AI, you name it!"],
       ["If I sound like a good fit for your team, feel free to contact my corporeal form through my contact info linked below."],
       ["Thanks so much for getting to know me a bit, I'm just going to rest my eyes a bit now, feel free to hang out as long as you like!"],
       [".....zzzzzzzz....","./previewGifs/sleepynick.gif"],
@@ -776,9 +794,9 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       document.getElementById("bg1").style.backgroundImage = "url(./bgs/" + img1 + ".png)";
       document.getElementById("bg2").style.backgroundImage = "url(./bgs/" + img2 + ".png)";
       document.getElementById("bg2").style.opacity = Math.random() / 4 + 0.3 + "";
-  
       
-
+      
+      
     function openCity(evt, cityName) {
       // Declare all variables
       var i, tabcontent, tablinks;
@@ -803,14 +821,11 @@ d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){r
       }
   }
   
-    openCity(event, 'London')
+    openCity(event, 'Nico')
   
 
     initial = 0;
     individual = dialogs[initial][0].split('');
-
-
-
 
 
 
@@ -868,15 +883,28 @@ function createDiag ( dialog ) {
 
 }
 
+
+function getPics() {} //just for this demo
+  const imgs = document.querySelectorAll('.preview_gallery img');
+  const fullPage = document.querySelector('#fullpage');
+
+  imgs.forEach(img => {
+    img.addEventListener('click', function() {
+      fullPage.style.backgroundImage = 'url(' + img.src + ')';
+      fullPage.style.display = 'block';
+    });
+});
+
+
 createDiag( individual );
+getPics()
 
-
-  </script>
+</script>
   
   
   
   
-  </html>
+</html>
   
   
   
