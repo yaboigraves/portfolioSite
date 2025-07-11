@@ -1,913 +1,239 @@
-<!-- 
- Hello! If you're snooping the source code for this, yes it is very frankensteined! 
- Feel free to take anything you want from the source, and I swear this massive cluster-f is by no means a reflection of my game engineering skills!
--->
-
-
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Graves - Game Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div id="fullpage" onclick="this.style.display='none';"></div>
-    <title>HIRE ME PLS</title> 
-    <link rel="icon" type="image/x-icon" href="">
-
-  </head>
-  
-      <div class="background-animated2" id = "bg2">
-      </div>
-  
-    <div class="background-animated" id = "bg1">
-    </div>
-  
-  
-    <div class = "textContainer">
-  
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Nico')">Nico Graves</button>
-        <button class="tablinks" onclick="openCity(event, 'ProProjects')">Stuff I've Worked On</button>
-        <button class="tablinks" onclick="openCity(event, 'PerProjects')">Stuff I've Made</button>
-        <button class="tablinks" onclick="openCity(event, 'WorkingOn')">Stuff I'm Working On</button>
-      </div>
-      
-      <!-- Tab content -->
-      <div id="Nico" class="tabcontent">
-
-
-        <img src = "./previewGifs/sleepynick.gif" id = "portrait" style = "display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;margin-top:25px; margin-bottom: 15px; border-radius: 100px;  box-shadow: 0 0 0 3px wheat, 0 0 0 12px #251C00;
-
-        -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-
-">
-   
-       
-        <div id="dialog"></div>
-       
-      </h6>
-   
-      </div>
     
-
-      
-      <div id="PerProjects" class="tabcontent">
-        <h2 style = "margin: 1.25%;  text-align: center; ">Personal Projects</h2>
-       
-        <div class="gallery">
-            <a id="myLink" title="Click to do something"
-            href="PleaseEnableJavascript.html" onclick="openCity(event, 'Alibi');return false;">
-
-            <img src="./previewGifs//alibi.gif" alt="Cinque Terre" width="600" height="400">
-          </a>
-          <div class="desc" >
-            Alibi
-          
-          </div>
-          
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+        <div class="modal-nav">
+            <span class="modal-prev">&#10094;</span>
+            <span class="modal-next">&#10095;</span>
         </div>
-
-      
-  
-  
-      </div>
-
-      
-      
-      <div id="ProProjects" class="tabcontent">
-        <h2 style = "margin: 1.25%; text-align: center; "> Professional Projects</h2>
-       
-        <div class="gallery">
-
-
-          <a id="myLink" title="Click to do something"
-          href="PleaseEnableJavascript.html" onclick="openCity(event, 'Homebody');return false;">
-
-          <img src="./homebodyGif1.gif"Cinque Terre" width="600" height="400">
-        </a>
-
-
-          <div class="desc" >
-            Homebody
-            <br>
-            
-            <div style ="font-size:medium;">UI/Gameplay Engineer</div>
-
-
-          </div>
-      
-    
-          
-        </div>
-
-
-        <div class="gallery">
-
-
-          <a id="myLink" title="Click to do something"
-          href="PleaseEnableJavascript.html" onclick="openCity(event, 'Elsewhere');return false;">
-
-          <img src="./previewGifs/elsewhere_preview.gif"Cinque Terre" width="600" height="400">
-        </a>
-
-          <div class="desc" >
-            Elsewhere
-            <br>
-            <div style ="font-size:medium;">Founding Engineer</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="WorkingOn" class="tabcontent">
-        <h2 style = "margin: 1.25%; text-align: center;"> Misc Projects</h2>
-       
-        <div class="gallery">
-
-          <a id="myLink" title="Click to do something"
-          href="PleaseEnableJavascript.html" onclick="openCity(event, 'Metalfingaz');return false;">
-
-          <img src="./previewGifs/metalfingaz1.png"Cinque Terre" width="600" height="400">
-        </a>
-
-          <div class="desc" >
-            METALFINGAZ
-            <br>
-    
-
-          </div>
-      
-    
-          
-        </div>
-  
-        <div class="gallery">
-          
-          <a id="myLink" title="Click to do something"
-          href="PleaseEnableJavascript.html" onclick="openCity(event, 'MFX_RPG');return false;">
-
-          <img src="./previewGifs/rpg2.png"Cinque Terre" width="600" height="400">
-        </a>
-          <div class="desc" >
-            Untitled RPG
-            <br>
-    
-
-          </div>
-      
-    
-          
-        </div>
-  
-      </div>
-
-      
-      <div id="Metalfingaz" class="tabcontent">
-        <h2 style = "margin: 1.25%;text-align: center; "> Metalfingaz</h2>
-       
-
-        <div class="gallery" style="width: 50%;">
-            <img src="./previewGifs/metalfingaz.png" alt="Cinque Terre" width="600" height="400">
-        
-        </div>
-
-        <div>
-          <p style='font-family:"dialogue_content";'>- A couch co-op versus rhythm game. Players try to drum out rhythms that the other player must match!</p>
-          <p style='font-family:"dialogue_content";'>- Developed mainly as a solo project, with some support from small indie collective (MFX) help.</p>
-          <p style='font-family:"dialogue_content";'>- Made in Unity, then ported to Godot.</p>
-        </div>
-    
-    
- 
-  
-      </div>
-
-
-      <div id="MFX_RPG" class="tabcontent">
-        <h2 style = "margin: 1.25%;text-align: center; "> untitled rpg</h2>
-       
-
-        <div class="gallery" style="width: 50%;">
-            <img src="./previewGifs/recstore2.png" alt="Cinque Terre" height="300">
-        
-        </div>
-
-        <div>
-          <p style='font-family:"dialogue_content";'>- A long term passion project, an rpg about music and communities that flock around it. Set in a stagnant world where music is gatekept by tech giants.</p>
-          <p style='font-family:"dialogue_content";'>- Combines elements of games and manga we love, like Ping Pong, Samurai Champloo, Jet Set Radio, Parappa the Rapper, Persona, Paper Mario, and more.</p>
-          <p style='font-family:"dialogue_content";'>- Made with MFX indie collective (Jalen Hernandez (art), Jerry Joiner (design/writing), Aaron Patrick (3d), and yours truly (everything else plus all the other roles too).</p>
-          <p style='font-family:"dialogue_content";'>- Prototyped and developed in Unity badly, and currently in development in godot.</p>
-        </div>
-      </div>
-
-      <div id="Alibi" class="tabcontent">
-        <h2 style = "margin: 1.25%;text-align: center; "> Alibi</h2>
-       
-
-        <div class="gallery">
-          <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
-            <img src="./previewGifs/alibi.gif" alt="Cinque Terre" width="600" height="400">
-          </a>
-          <div class="desc" >
-            Play on Itch.io
-            <br>
-          </div>
-        </div>
-
-        <div>
-          <p style='font-family:"dialogue_content";'>- A short, noir inspired interrogative whodunnit set in a surreal 1960's San Francisco.</p>
-          <p style='font-family:"dialogue_content";'>- Created in one week with Zane Schaeffer (art) for Brackeys Game Jam 2020.1.</p>
-          <p style='font-family:"dialogue_content";'>- Rated 33rd overall of 697 entries, and 7th for audio.</p>
-          <p style='font-family:"dialogue_content";'>- Made with Unity.</p>
-        </div>
-    
-        <div class = "preview_gallery">
-          <img src = "./previewGifs/alibi2.png" width="300px" > </img>
-          <img src = "./previewGifs/alibi3.png" width="300px"> </img>
-          <img src = "./previewGifs/alibi4.png" width="300px"> </img>
-        </div>
-  
-      </div>
-
-      <div id="Homebody" class="tabcontent">
-        <h2 style = "margin: 1.25%;text-align: center; "> Homebody</h2>
-        <div class="gallery">
-          <a target="_blank" href="https://store.steampowered.com/app/1959350/Homebody/">
-            <img src="./homebodyGif1.gif" alt="Cinque Terre" width="600" height="400">
-          </a>
-          <div class="desc" >
-            Get on Steam!
-            <br>
-          </div>
-        </div>
-
-        <div>
-          <p style='font-family:"dialogue_content";'>- A retro inspired psychological horror puzzler, about friendships and mental health. Created by Game Grumps Inc and Rogue Games.</p>
-          <p style='font-family:"dialogue_content";'>- Time loop escape room, with a murderous killer stalking you.</p>
-          <p style='font-family:"dialogue_content";'>- I worked as a generalist unity developer with a UI focus on this project.</p>
-          <p style='font-family:"dialogue_content";'>- Very small (3 person core including me) team, so I wore alot of hats!</p>
-          <p style='font-family:"dialogue_content";'>- Shipped on multiple platforms, and 6 languages on launch, which was a fun challenge as UI engineer!</p>
-        </div>
-    
-        <div class ="preview_gallery">
-          <img src = "./previewGifs/homebody1.jpg.jpeg" width="400px" > </img>
-          <img src = "./previewGifs/homebody2.jpg" width="400px"> </img>
-          <img src = "./previewGifs/homebody3.jpg" width="400px"> </img>
-        </div>
-  
-      </div>
-  
-  
-      <div id="Elsewhere" class="tabcontent">
-        <h2 style = "margin: 1.25%;text-align: center; "> Elsewhere</h2>
-       
-        <div class="gallery">
-          <a target="_blank" href="https://elsewhere.zone">
-            <img src="./previewGifs/elsewhere_preview.gif" alt="Cinque Terre" width="600" height="400">
-          </a>
-          <div class="desc" >
-            2025 Demo Landing Page
-            <br>
-          </div>
-        </div>
-
-        <div>
-          <p style='font-family:"dialogue_content";'>- A networked co-op action roguelike set in your dreams. Confront and defeat your Jungian Shadow with the help of your Archetypes.</p>
-          <p style='font-family:"dialogue_content";'>- Hades with your friends! Tight action gameplay loop with explosive upgrade synergies.</p>
-          <p style='font-family:"dialogue_content";'>- Lead engineering efforts on a small 5 person team with several contractors under me. I either designed or worked on every feature.</p>
-          <p style='font-family:"dialogue_content";'>- Created using the Godot Game Engine. I acted as a liason between the team and the Godot development team, making sure we could cook!</p>
-          <p style='font-family:"dialogue_content";'>- Project was sadly cancelled after failing to receive additional funding, development lasted about a year and a half.</p>
-        </div>
-    
-        <div class ="preview_gallery">
-          <img src = "./previewGifs/elsewhere_1.png" width="400px" > </img>
-          <img src = "./previewGifs/elsewhere_2.png" width="400px"> </img>
-          <img src = "./previewGifs/elsewhere_3.png" width="400px"> </img>
-        </div>
-      </div>
-  
-      
-      <div class = "footer">
-        <a href="NicoGravesResume2025.pdf" target="_blank" download=""> resume</a> |
-        <a href=" https://github.com/yaboigraves" target="_blank"> github</a> |
-        <a href="https://gravesmakesart.itch.io/" target="_blank"> itch.io</a> |
-        <a href="https://soundcloud.com/gravesmakesart" target="_blank"> soundcloud</a>
-      </div>
+        <div class="modal-dots" id="modalDots"></div>
     </div>
     
-  
-  
-  
-  <style>
-  /* Style the tab */
-
-   
-
-  .tab {
-    overflow: hidden;
-    border: 0px solid #ccc;
-    border-radius: 25px;
-    display:flex;
-
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background-color: rgba(20,20,20,0.5);
-    /* border-radius: 25px; */
-    width: 33.3%;
-    float:none;
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px;
-    transition: 0.3s;
-    color:wheat;
-    font-family: "yearis199x";
-    font-size: larger;
-  
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: rgba(123,124,125,1);
-    cursor: url(./cursors/Glove\ Link.cur ),auto;
+    <div class="background-animated2" id="bg2"></div>
+    <div class="background-animated" id="bg1"></div>
     
-  }
-  
-  /* Create an active/current tablink class */
-  /* .tab button.active {
-    
-  } */
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    margin: 1%;
-    border: 0px solid #ccc;
-    border-top: none;
-    color:wheat;
-  
-  }
-  
-  img{
-    border-radius: 10px;
-  }
-  
-   a{
-    text-decoration: none;
-   }
-
-   a:hover{
-    text-decoration: underline;
-   }
-  
-    .footer {
-      position: fixed;
-      left:15%;
-      right:15%;
-
-      bottom: 1%;
-      padding: 10;
-      
-      max-height: 8%;
- 
-      
-      background-color: rgba(20, 20, 20, 0.8);
-      color: wheat;
-      text-align: center;
-      border-radius: 10px;
-   
-
-    }
-  
-    .texttt{
-      margin: 25;   
-  
-    }
-  
-    h2{
-      margin-bottom: 0;
-    }
-  
-
-    body{
-      margin: 0;
-    
-      cursor:url(./cursors/Glove\ Normal.cur ),auto;
-  
-    }
-  
-    a{
-      cursor: url(./cursors/Glove\ Link.cur ),auto;
-    }
-    
-    #dialog{
-      cursor: url(./cursors/Glove\ Link.cur ),auto;
-      -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    }
-  
-    h1{
-      font-size: 36;
-      font-family: "name";
-    }
-
-    #fullpage {
-  display: none;
-  position: absolute;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-size: contain;
-  background-repeat: no-repeat no-repeat;
-  background-position: center center;
-  background-color: black;
-}
-  
-  
-    a{
-      color:inherit;
-    }
-      .hide{
-          display: none;
-      }
-  
-      .resume:hover{
-          content: ">asjdjas";
-      }
-  
-      @font-face {
-        font-family: "name";
-        src: url("./fonts/Saturn-Boing.woff");
-      }
-  
-      @font-face {
-          font-family: "yearis199x";
-          src: url("./fonts/KiwiSoda.ttf")
-      }
-
-      @font-face{
-        font-family : "dialogue_content";
-        src: url("./fonts/VCR_OSD_MONO_1.001.ttf")
-
-      }
-      
-  
-      .textContainer{
-          /* background-color:black; */
-          border-radius: 25px;
+    <div class="textContainer">
+        <div class="tab">
+            <button class="tablinks" data-tab="Nico">Nico Graves</button>
+            <button class="tablinks" data-tab="ProProjects">Stuff I've Worked On</button>
+            <button class="tablinks" data-tab="PerProjects">Stuff I've Made</button>
+            <button class="tablinks" data-tab="WorkingOn">Stuff I'm Working On</button>
+        </div>
         
-          
-          
-          /* background-color: rgba(20, 20, 20, 0.8); */
-  
-          background-image:  linear-gradient(180deg, rgba(20,20, 20,0.8) ,rgba(20,20, 20,0.6) ,rgba(0, 0,0,-1));
-          /* opacity: 100% !important;
-          color: white !important; */
-          color: white;
-          position:absolute;
-          font-family: "yearis199x";
-
-          font-size: 18;
-
+        <!-- Tab content -->
+        <div id="Nico" class="tabcontent">
+            <img src="./previewGifs/sleepynick.gif" id="portrait" alt="Nico's animated portrait">
+            <div id="dialog"></div>
+        </div>
         
-     /* / */
-         top: 5%;
-         left:2.5%;
-         bottom: 0;
-         right: 2.5%
-  
-          /* left:10;
-          top: 10;
-          right: 10;
-          bottom: 10; */
-          /* background-image: url("./bgs/033.png"); */
-        
-      }
-  
-  
-      .background-animated {
-        width: 100%;
-        height: 100vh;
-        animation: infiniteScrollBg 12s linear infinite;
-      }
-  
-      .background-animated::before{
-          /* \\\background-image: url('./bgs/028.png'); */
-        background-size: cover;
-        opacity: 100%;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-      }
-      
-      @keyframes infiniteScrollBg {
-        0% {
-          background-position: 128 -256;
-  
-        }
-        100%{
-          background-position: 128 256;
-  
-        }
-      }
-  
-  
-      .background-animated2 {
-        width: 100%;
-        height: 100vh;
-        opacity: 33%;
-        position: absolute;
-        /* background-color: #000; */
-        /* background-image: url('./bgs/036.png'); */
-        animation: infiniteScrollBg2 8s linear infinite;
-      }
-      
-      @keyframes infiniteScrollBg2 {
-        0% {
-          background-position: 0 0;
-        }
-        100%{
-          background-position: 256 256;
-        }
-      }
-  
-  
-  
-    div.gallery {
-      margin: 1%;
-      margin-top: 5px;
-      float: left;
-      width: 25%;
-      /* overflow: hidden; */
-      margin-right: 10;
-  
-      overflow:visible;
-      background-color: rgba(20,20, 20,0.6);
-      border: 0px;
-      border-radius: 25px;
-    }
-  
-    div.gallery:hover {
-      text-decoration: underline;
-      /* font-size: 25; */
-    }
-  
-    div.gallery img {
-      border-radius: 10px;
-      width: 100%;
-      height: auto;
-    
-    }
-  
-    div.desc {
-      margin: 10px;
-      text-align: center;
-      font-size: px;
-      
-    }
-
-
-
-
-
-
-@-webkit-keyframes arrow_anim {
-   from { margin-top: 58px; }
-     to { margin-top: 67px; }
-}
-
-@-moz-keyframes arrow_anim {
-   from { margin-top: 58px; }
-     to { margin-top: 67px; }
-}
-
-@-ms-keyframes arrow_anim {
-   from { margin-top: 58px; }
-     to { margin-top: 67px; }
-}
-
-@-o-keyframes arrow_anim {
-   from { margin-top: 58px; }
-     to { margin-top: 67px; }
-}
-
-@keyframes arrow_anim {
-   from { margin-top: 14%; }
-     to { margin-top: 16%; }
-}
-
-#arrow {
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid wheat;
-  height: 0; 
-
-  margin: 70px 0px 0px 85%;
-  position: absolute;
-  width: 0; 
-  
-  -webkit-animation: arrow_anim .3s steps(3) infinite;
-  -moz-animation: arrow_anim .3s steps(3) infinite;
-  -ms-animation: arrow_anim .3s steps(3) infinite;
-  -o-animation: arrow_anim .3s steps(3) infinite;
-  animation: arrow_anim .3s steps(3) infinite;
-}
-
-
-#dialog {
-  height: 90px;
-  background: #1c1c1c;
-  margin: auto;
-  border-radius: 25px;
-  box-shadow: 0 0 0 6px wheat, 0 0 0 12px #251C00;
-  color: wheat;
-  font-family: "dialogue_content";
-  font-size: 16px;
-  font-weight: bold;
-  padding: 20px 20px 20px 20px;
-  position: relative;
-  text-transform: uppercase;
-  word-spacing: 3px;
-  width: 500px;
-  bottom: 15px;
-  top :15px
-}
-
-  </style>
-  
-  
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-  </script>
-
-  <script>
-
-    /* mousetrap v1.6.5 craig.is/killing/mice */
-(function(q,u,c){function v(a,b,g){a.addEventListener?a.addEventListener(b,g,!1):a.attachEvent("on"+b,g)}function z(a){if("keypress"==a.type){var b=String.fromCharCode(a.which);a.shiftKey||(b=b.toLowerCase());return b}return n[a.which]?n[a.which]:r[a.which]?r[a.which]:String.fromCharCode(a.which).toLowerCase()}function F(a){var b=[];a.shiftKey&&b.push("shift");a.altKey&&b.push("alt");a.ctrlKey&&b.push("ctrl");a.metaKey&&b.push("meta");return b}function w(a){return"shift"==a||"ctrl"==a||"alt"==a||
-"meta"==a}function A(a,b){var g,d=[];var e=a;"+"===e?e=["+"]:(e=e.replace(/\+{2}/g,"+plus"),e=e.split("+"));for(g=0;g<e.length;++g){var m=e[g];B[m]&&(m=B[m]);b&&"keypress"!=b&&C[m]&&(m=C[m],d.push("shift"));w(m)&&d.push(m)}e=m;g=b;if(!g){if(!p){p={};for(var c in n)95<c&&112>c||n.hasOwnProperty(c)&&(p[n[c]]=c)}g=p[e]?"keydown":"keypress"}"keypress"==g&&d.length&&(g="keydown");return{key:m,modifiers:d,action:g}}function D(a,b){return null===a||a===u?!1:a===b?!0:D(a.parentNode,b)}function d(a){function b(a){a=
-a||{};var b=!1,l;for(l in p)a[l]?b=!0:p[l]=0;b||(x=!1)}function g(a,b,t,f,g,d){var l,E=[],h=t.type;if(!k._callbacks[a])return[];"keyup"==h&&w(a)&&(b=[a]);for(l=0;l<k._callbacks[a].length;++l){var c=k._callbacks[a][l];if((f||!c.seq||p[c.seq]==c.level)&&h==c.action){var e;(e="keypress"==h&&!t.metaKey&&!t.ctrlKey)||(e=c.modifiers,e=b.sort().join(",")===e.sort().join(","));e&&(e=f&&c.seq==f&&c.level==d,(!f&&c.combo==g||e)&&k._callbacks[a].splice(l,1),E.push(c))}}return E}function c(a,b,c,f){k.stopCallback(b,
-b.target||b.srcElement,c,f)||!1!==a(b,c)||(b.preventDefault?b.preventDefault():b.returnValue=!1,b.stopPropagation?b.stopPropagation():b.cancelBubble=!0)}function e(a){"number"!==typeof a.which&&(a.which=a.keyCode);var b=z(a);b&&("keyup"==a.type&&y===b?y=!1:k.handleKey(b,F(a),a))}function m(a,g,t,f){function h(c){return function(){x=c;++p[a];clearTimeout(q);q=setTimeout(b,1E3)}}function l(g){c(t,g,a);"keyup"!==f&&(y=z(g));setTimeout(b,10)}for(var d=p[a]=0;d<g.length;++d){var e=d+1===g.length?l:h(f||
-A(g[d+1]).action);n(g[d],e,f,a,d)}}function n(a,b,c,f,d){k._directMap[a+":"+c]=b;a=a.replace(/\s+/g," ");var e=a.split(" ");1<e.length?m(a,e,b,c):(c=A(a,c),k._callbacks[c.key]=k._callbacks[c.key]||[],g(c.key,c.modifiers,{type:c.action},f,a,d),k._callbacks[c.key][f?"unshift":"push"]({callback:b,modifiers:c.modifiers,action:c.action,seq:f,level:d,combo:a}))}var k=this;a=a||u;if(!(k instanceof d))return new d(a);k.target=a;k._callbacks={};k._directMap={};var p={},q,y=!1,r=!1,x=!1;k._handleKey=function(a,
-d,e){var f=g(a,d,e),h;d={};var k=0,l=!1;for(h=0;h<f.length;++h)f[h].seq&&(k=Math.max(k,f[h].level));for(h=0;h<f.length;++h)f[h].seq?f[h].level==k&&(l=!0,d[f[h].seq]=1,c(f[h].callback,e,f[h].combo,f[h].seq)):l||c(f[h].callback,e,f[h].combo);f="keypress"==e.type&&r;e.type!=x||w(a)||f||b(d);r=l&&"keydown"==e.type};k._bindMultiple=function(a,b,c){for(var d=0;d<a.length;++d)n(a[d],b,c)};v(a,"keypress",e);v(a,"keydown",e);v(a,"keyup",e)}if(q){var n={8:"backspace",9:"tab",13:"enter",16:"shift",17:"ctrl",
-18:"alt",20:"capslock",27:"esc",32:"space",33:"pageup",34:"pagedown",35:"end",36:"home",37:"left",38:"up",39:"right",40:"down",45:"ins",46:"del",91:"meta",93:"meta",224:"meta"},r={106:"*",107:"+",109:"-",110:".",111:"/",186:";",187:"=",188:",",189:"-",190:".",191:"/",192:"`",219:"[",220:"\\",221:"]",222:"'"},C={"~":"`","!":"1","@":"2","#":"3",$:"4","%":"5","^":"6","&":"7","*":"8","(":"9",")":"0",_:"-","+":"=",":":";",'"':"'","<":",",">":".","?":"/","|":"\\"},B={option:"alt",command:"meta","return":"enter",
-escape:"esc",plus:"+",mod:/Mac|iPod|iPhone|iPad/.test(navigator.platform)?"meta":"ctrl"},p;for(c=1;20>c;++c)n[111+c]="f"+c;for(c=0;9>=c;++c)n[c+96]=c.toString();d.prototype.bind=function(a,b,c){a=a instanceof Array?a:[a];this._bindMultiple.call(this,a,b,c);return this};d.prototype.unbind=function(a,b){return this.bind.call(this,a,function(){},b)};d.prototype.trigger=function(a,b){if(this._directMap[a+":"+b])this._directMap[a+":"+b]({},a);return this};d.prototype.reset=function(){this._callbacks={};
-this._directMap={};return this};d.prototype.stopCallback=function(a,b){if(-1<(" "+b.className+" ").indexOf(" mousetrap ")||D(b,this.target))return!1;if("composedPath"in a&&"function"===typeof a.composedPath){var c=a.composedPath()[0];c!==a.target&&(b=c)}return"INPUT"==b.tagName||"SELECT"==b.tagName||"TEXTAREA"==b.tagName||b.isContentEditable};d.prototype.handleKey=function(){return this._handleKey.apply(this,arguments)};d.addKeycodes=function(a){for(var b in a)a.hasOwnProperty(b)&&(n[b]=a[b]);p=null};
-d.init=function(){var a=d(u),b;for(b in a)"_"!==b.charAt(0)&&(d[b]=function(b){return function(){return a[b].apply(a,arguments)}}(b))};d.init();q.Mousetrap=d;"undefined"!==typeof module&&module.exports&&(module.exports=d);"function"===typeof define&&define.amd&&define(function(){return d})}})("undefined"!==typeof window?window:null,"undefined"!==typeof window?document:null);
-
-    //portraits
-    //sleep
-    //waking up
-    //talking1
-    //talking2
-
-    //this is really annoying to read from, im going to just write a simple parser so i can drop an md file instead
-    //the markdown can still be parsed i think
-
-
-    var dialogs = [
-      ['... zzzz ...',"sleepynick.gif"],
-      ["...zzzzzz......"],
-      ["zzzzzzzzzzzzzzzz......zz"],
-      ["..zzzzz-OH OH Hello! I didn't uh, I didn't see you there. Was just uh, resting my eyes ya know.","./previewGifs/nicktalkingexcited.gif"],
-      ["Anywho, you're probably looking at this page because I sent it to you after seeing your job posting!","./previewGifs/nicktalking.gif"],
-      ["Websites are a little impersonal, so I thought I'd scan my brain and upload a digital version of it here!"],
-      ["...Impervious to the flow of time and space, this snapshot of my consciousness will linger in reality far longer than my flesh prison."],
-      ["....","./previewGifs/nickidle.gif"],
-      ["Anyways, you can find links to my resume and stuff at the bottom, so if you want the TL;DR version look there!","./previewGifs/nicktalkingexcited.gif"],
-      ["I'm Nico! I'm a game developer and designer based out of San Francisco.","./previewGifs/nicktalking.gif"],
-      ["I have an engineering backbone, I received my bachelors in Computer Science from San Francisco State in 2019."],
-      ["I've been running tabletop campaigns since I was a kid, game design came naturally to me and has been a lifelong passion!"],
-      ["I'm also quite an eclectic person. I love music, art, philosophy, and math, so game dev is really a perfect craft for me!"],
-      ["The ability to create stories and worlds that are *truly* immersive is just so fascinating to me, its magic in real life. ","./previewGifs/nicktalking.gif"],
-      ["I try my best to consume as much knowledge as I can, I love learning new tricks, tools, and techniques!","./previewGifs/nicktalkingexcited.gif"],
-      ["Whether it's seeing what 3D animators are working on, dreaming with designers, or asking dumb questions to marketers, I love the entire game dev process.","./previewGifs/nicktalkingexcited.gif"],
-      ["Music has always been a passion of mine, in my free time I'm making jazz, prog rock, ambient music, hip hop beats, whatever I'm feelin.","./previewGifs/nicktalking.gif"],
-      ["Onto my hard skills, I'm a confident engineer and architect who's built entire game systems by myself that have needed to scale for years of development."],
-      ["I've worked for 4 years as a Unity Developer in various contract roles, and 1 and a half years as a proffessional full time Godot developer."],
-      ["I'm comfortable working in frameworks and game engines, I've worked on contract gigs with simple frameworks, custom engines, and of course Unity and Godot."],
-      ["I know how to build and mantain scaleable and performant systems, manage version control workflows, and help with CLI and automated builds."],
-      ["I'm comfortable prototyping and working with 3D assets, and have worked very closely with 3D artists to help build solutions for beautiful experiences."],
-      ["I'm a highly effective communicator, and have been told I'm an asset to have in any discussion. Whether it be architecture, production goals, or design ideas, lets talk!"],
-      ["In summary, I'm a great asset to have on both small and large teams!","./previewGifs/nicktalkingexcited.gif"],
-      ["How about a little about my work background!","./previewGifs/nicktalking.gif"],
-      ["While working on my degree I started teaching at an afterschool program specifically geared for programming."],
-      ["I loved working with kids (8-18), and after I got my programming chops up a bit I started teaching game dev there."],
-      ["This gave me an awesome opportunity to share what I was learning with kids, so while teaching there I developed my skills."],
-      ["I started doing game jams with friends and alone as often as I could, and instantly got hooked! "],
-      ["I had always looked up to solo-devs like Lucas Pope (Papers Please) and Eric Barone (Stardew Valley)..."],
-      ["Inspired by them, I made sure that I learned as much about as many parts of game dev as I could."],
-      ["While teaching I worked on a variety of personal projects, game jams, and small contract work for friends. This helped me build out my portfolio and learn!"],
-      ["And then in 2022, I got hired by Game Grumps to work on Homebody, a psychological Horror Game.","./previewGifs/nicktalkingexcited.gif"],
-      ["I work(ed) on a small team and really got to spread my wings and learn a bunch about actually finishing and shipping games.","./previewGifs/nicktalking.gif"],
-      ["I would describe my role on that project as a technical designer/gameplay programmer and ui engineer, I wore many hats."],
-      ["I implemented the games entire UI, which was a challenge because the game shipped on all platforms at launch AND was localized in 6 languages."],
-      ["The game has alot of menus and is very narrative, so this was a fun challenge that I felt I rose to the occasion of!"],
-      ["I also took existing base systems and extended them breadth and depth wise."],
-      ["Building new extensions to core systems, designing content in those systems, refining their feel."],
-      ["I was lucky enough to work under a former Sony Santa Monica engineer, who acted as a fantastic early mentor to me."],
-      ["After Homebody launched in June 2023, I spent the rest of 2023 acting as a contractor on a variety of small indie projects."],
-      ["I helped design a Lua scripting and modding framework for an in development punch-out inspired game."],
-      ["I also worked as a Unity contractor again helping oversee development on a rhythm action roguelike for several months as well."],
-      ["In January 2024 I had actually managed to find a contract to hire Godot engineer job!","./previewGifs/nicktalkingexcited.gif"],
-      ["A venture backed start up called Elsewhere brought me on board to help with development on a co-op action roguelike inspired by Hades."],
-      ["I took over the codebase and acted as the core founding engineer for the studio for about a year and a half. It was awesome!",,"./previewGifs/nicktalking.gif"],
-      ["The team was very small, and I acted as the lead engineer on the project. It was a small team, but the project was very ambitious!"],
-      ["I had a hand in either designing, architecting, or engineering almost every system in the game."],
-      ["I also helped with a variety of studio ops, such as production, task management, version control management, hiring, and more!"],
-      ["It was alot of work with many late nights and long hours, but it was a truly amazing experience to cook so hard. I had a blast."],
-      ["Sadly the game did not manage to receive additional funding it needed in 2025, and the project had to be dropped."],
-      ["That being said, I'm so grateful for the opportunity to have worked on Elsewhere, and cherish the relationships I made with the entire team"],
-      ["So here we are! I'm now looking for my next steps in the games industry. I'm open to a wide variety of roles currently."],
-      ["While the majority of my experience is gameplay programming, I love most aspects of development. Tools dev, infrastructure, enemy AI, you name it!"],
-      ["If I sound like a good fit for your team, feel free to contact my corporeal form through my contact info linked below."],
-      ["Thanks so much for getting to know me a bit, I'm just going to rest my eyes a bit now, feel free to hang out as long as you like!"],
-      [".....zzzzzzzz....","./previewGifs/sleepynick.gif"],
-      ["..zzz."],
-      ["..zzz."],
-      ["..zzz.."],
-      ["..zzz...."],
-      ["..zzz......."],
-      ["..zzz................................."],
-      ["..Are you still here?","./previewGifs/nicktalking.gif"],
-      ["Are you expecting something?"],
-      ["This isn't the end of like, movie credits or anything..."],
-      ["No teaser here...what would it even be for?"],
-      ["...","./previewGifs/nickidle.gif"],
-      ["..."],
-      ["Ok, if you promise to give me an interview, I'll announce something. Deal?","./previewGifs/nicktalking.gif"],
-      ["Ok deal..."],
-      ["ANNOUNCING... PORTFOLIO SITE ... 2!!!!!!","./previewGifs/nicktalkingexcited.gif"],
-      ["Like, that sounds lame c'mon.","./previewGifs/sleepynick.gif"],
-      ["You really ought to go just look at my resume.","./previewGifs/nicktalking.gif"],
-      ["Thanks for staying the whole way through though. It was a pleasure meeting you! I'm slee- I mean resting my eyes now. Bye!!"],
-      [".zzzzzz....","./previewGifs/sleepynick.gif","sleepynick.gif"]
-    ]
-
-
-      //randomly change the image numbers used
-  
-      let img1 = Math.floor(Math.random() * 160)
-      let img2 = Math.floor(Math.random() * 160)
-  
-     
-      if(img1 < 10){
-        img1 = "00" + img1;
-      }
-      else if(img1 < 100){
-        img1 = "0" + img1;
-      }
-  
-  
-      if(img2 < 10){
-        img2 = "00" + img2;
-      }
-      else if(img2 < 100){
-        img2 = "0" + img2;
-      }
-  
-      console.log(img1)
-      console.log(img2)
-  
-  
-      document.getElementById("bg1").style.backgroundImage = "url(./bgs/" + img1 + ".png)";
-      document.getElementById("bg2").style.backgroundImage = "url(./bgs/" + img2 + ".png)";
-      document.getElementById("bg2").style.opacity = Math.random() / 4 + 0.3 + "";
-      
-      
-      
-    function openCity(evt, cityName) {
-      // Declare all variables
-      var i, tabcontent, tablinks;
-    
-      // Get all elements with class="tabcontent" and hide them
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-    
-      // Get all elements with class="tablinks" and remove the class "active"
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-    
-      // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(cityName).style.display = "block";
-      if(event != null){
-        evt.currentTarget.className += " active";
-
-      }
-  }
-  
-    openCity(event, 'Nico')
-  
-
-    initial = 0;
-    individual = dialogs[initial][0].split('');
-
-
-
-function createDiag ( dialog ) {
-  
-  document.getElementById("dialog").onmousedown = function () {
-    clearTimeout();
-  }
-  Mousetrap.unbind("enter");
-  
-  //TODO: bind these functions to things that cancel the timeout and auto complete
-
-  for(i = 0; i < dialog.length; i++) {
-    (function(i){
-      setTimeout(function(){
-        $('#dialog').text($('#dialog').text() + dialog[i]);
-        if (i == dialog.length-1 && dialogs[initial + 1]) {
-          $('#dialog').prepend('<div id="arrow"></div>');
-          Mousetrap.bind('enter', function() {
-            if(dialogs[initial + 1][1]){
-              $("#portrait").attr("src",dialogs[initial + 1][1])
-            }
-
-            if (dialogs[initial+1]) {
-              $('#dialog').text('');
-              initial += 1;
-              individual = dialogs[initial][0].split('');
-              createDiag( individual );
-            }
-          });
-
-          
-          document.getElementById("dialog").onmousedown = function() {
-           
-            if(dialogs[initial + 1][1]){
-              $("#portrait").attr("src",dialogs[initial + 1][1])
-            }
+        <div id="PerProjects" class="tabcontent">
+            <h2>Personal Projects</h2>
             
-
-            if (dialogs[initial+1][0]) {
-              $('#dialog').text('');
-              initial += 1;
-              individual = dialogs[initial][0].split('');
-              createDiag( individual );
-            }
+            <div class="gallery">
+                <a class="gallery-link" data-tab="Alibi" href="#">
+                    <img src="./previewGifs/alibi.gif" alt="Alibi game preview" width="600" height="400">
+                </a>
+                <div class="desc">Alibi</div>
+            </div>
+        </div>
+        
+        <div id="ProProjects" class="tabcontent">
+            <h2>Professional Projects</h2>
             
-          }
-        }
-      }, 20*i);  
+            <div class="gallery">
+                <a class="gallery-link" data-tab="Homebody" href="#">
+                    <img src="./homebodyGif1.gif" alt="Homebody game preview" width="600" height="400">
+                </a>
+                <div class="desc">
+                    Homebody
+                    <br>
+                    <div class="role-subtitle">UI/Gameplay Engineer</div>
+                </div>
+            </div>
+            
+            <div class="gallery">
+                <a class="gallery-link" data-tab="Elsewhere" href="#">
+                    <img src="./previewGifs/elsewhere_preview.gif" alt="Elsewhere game preview" width="600" height="400">
+                </a>
+                <div class="desc">
+                    Elsewhere
+                    <br>
+                    <div class="role-subtitle">Founding Engineer</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="WorkingOn" class="tabcontent">
+            <h2>Misc Projects</h2>
+            
+            <div class="gallery">
+                <a class="gallery-link" data-tab="Metalfingaz" href="#">
+                    <img src="./previewGifs/metalfingaz1.png" alt="Metalfingaz game preview" width="600" height="400">
+                </a>
+                <div class="desc">METALFINGAZ</div>
+            </div>
+            
+            <div class="gallery">
+                <a class="gallery-link" data-tab="MFX_RPG" href="#">
+                    <img src="./previewGifs/rpg2.png" alt="Untitled RPG preview" width="600" height="400">
+                </a>
+                <div class="desc">Untitled RPG</div>
+            </div>
+        </div>
+        
+        <div id="Metalfingaz" class="tabcontent">
+            <h2>Metalfingaz</h2>
+            
+            <div class="project-layout">
+                <div class="project-left">
+                    <div class="gallery gallery-large">
+                        <img src="./previewGifs/metalfingaz.png" alt="Metalfingaz gameplay" width="600" height="400">
+                    </div>
+                </div>
+                
+                <div class="project-right">
+                    <div class="project-details">
+                        <p class="project-description">- A couch co-op versus rhythm game. Players try to drum out rhythms that the other player must match!</p>
+                        <p class="project-description">- Developed mainly as a solo project, with some support from small indie collective (MFX) help.</p>
+                        <p class="project-description">- Made in Unity, then ported to Godot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="MFX_RPG" class="tabcontent">
+            <h2>untitled rpg</h2>
+            
+            <div class="project-layout">
+                <div class="project-left">
+                    <div class="gallery gallery-large">
+                        <img src="./previewGifs/recstore2.png" alt="Untitled RPG record store">
+                    </div>
+                </div>
+                
+                <div class="project-right">
+                    <div class="project-details">
+                        <p class="project-description">- A long term passion project, an rpg about music and communities that flock around it. Set in a stagnant world where music is gatekept by tech giants.</p>
+                        <p class="project-description">- Combines elements of games and manga we love, like Ping Pong, Samurai Champloo, Jet Set Radio, Parappa the Rapper, Persona, Paper Mario, and more.</p>
+                        <p class="project-description">- Made with MFX indie collective (Jalen Hernandez (art), Jerry Joiner (design/writing), Aaron Patrick (3d), and yours truly (everything else plus all the other roles too).</p>
+                        <p class="project-description">- Prototyped and developed in Unity badly, and currently in development in godot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Alibi" class="tabcontent">
+            <h2>Alibi</h2>
+            
+            <div class="project-layout">
+                <div class="project-left">
+                    <div class="gallery gallery-large">
+                        <a target="_blank" href="https://gravesmakesart.itch.io/alibi">
+                            <img src="./previewGifs/alibi.gif" alt="Alibi game" width="600" height="400">
+                        </a>
+                        <div class="desc">Play on Itch.io</div>
+                    </div>
+                </div>
+                
+                <div class="project-right">
+                    <div class="screenshot-gallery">
+                        <img src="./previewGifs/alibi2.png" class="screenshot-thumb" alt="Alibi screenshot 1" data-full="./previewGifs/alibi2.png">
+                        <img src="./previewGifs/alibi3.png" class="screenshot-thumb" alt="Alibi screenshot 2" data-full="./previewGifs/alibi3.png">
+                        <img src="./previewGifs/alibi4.png" class="screenshot-thumb" alt="Alibi screenshot 3" data-full="./previewGifs/alibi4.png">
+                    </div>
+                    
+                    <div class="project-details">
+                        <p class="project-description">- A short, noir inspired interrogative whodunnit set in a surreal 1960's San Francisco.</p>
+                        <p class="project-description">- Created in one week with Zane Schaeffer (art) for Brackeys Game Jam 2020.1.</p>
+                        <p class="project-description">- Rated 33rd overall of 697 entries, and 7th for audio.</p>
+                        <p class="project-description">- Made with Unity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Homebody" class="tabcontent">
+            <h2>Homebody</h2>
+            
+            <div class="project-layout">
+                <div class="project-left">
+                    <div class="gallery gallery-large">
+                        <a target="_blank" href="https://store.steampowered.com/app/1959350/Homebody/">
+                            <img src="./homebodyGif1.gif" alt="Homebody game" width="600" height="400">
+                        </a>
+                        <div class="desc">Get on Steam!</div>
+                    </div>
+                </div>
+                
+                <div class="project-right">
+                    <div class="screenshot-gallery">
+                        <img src="./previewGifs/homebody1.jpg.jpeg" class="screenshot-thumb" alt="Homebody screenshot 1" data-full="./previewGifs/homebody1.jpg.jpeg">
+                        <img src="./previewGifs/homebody2.jpg" class="screenshot-thumb" alt="Homebody screenshot 2" data-full="./previewGifs/homebody2.jpg">
+                        <img src="./previewGifs/homebody3.jpg" class="screenshot-thumb" alt="Homebody screenshot 3" data-full="./previewGifs/homebody3.jpg">
+                    </div>
+                    
+                    <div class="project-details">
+                        <p class="project-description">- A retro inspired psychological horror puzzler, about friendships and mental health. Created by Game Grumps Inc and Rogue Games.</p>
+                        <p class="project-description">- Time loop escape room, with a murderous killer stalking you.</p>
+                        <p class="project-description">- I worked as a generalist unity developer with a UI focus on this project.</p>
+                        <p class="project-description">- Very small (3 person core including me) team, so I wore alot of hats!</p>
+                        <p class="project-description">- Shipped on multiple platforms, and 6 languages on launch, which was a fun challenge as UI engineer!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Elsewhere" class="tabcontent">
+            <h2>Elsewhere</h2>
+            
+            <div class="project-layout">
+                <div class="project-left">
+                    <div class="gallery gallery-large">
+                        <a target="_blank" href="https://elsewhere.zone">
+                            <img src="./previewGifs/elsewhere_preview.gif" alt="Elsewhere game" width="600" height="400">
+                        </a>
+                        <div class="desc">2025 Demo Landing Page</div>
+                    </div>
+                </div>
+                
+                <div class="project-right">
+                    <div class="screenshot-gallery">
+                        <img src="./previewGifs/elsewhere_1.png" class="screenshot-thumb" alt="Elsewhere screenshot 1" data-full="./previewGifs/elsewhere_1.png">
+                        <img src="./previewGifs/elsewhere_2.png" class="screenshot-thumb" alt="Elsewhere screenshot 2" data-full="./previewGifs/elsewhere_2.png">
+                        <img src="./previewGifs/elsewhere_3.png" class="screenshot-thumb" alt="Elsewhere screenshot 3" data-full="./previewGifs/elsewhere_3.png">
+                    </div>
+                    
+                    <div class="project-details">
+                        <p class="project-description">- A networked co-op action roguelike set in your dreams. Confront and defeat your Jungian Shadow with the help of your Archetypes.</p>
+                        <p class="project-description">- Hades with your friends! Tight action gameplay loop with explosive upgrade synergies.</p>
+                        <p class="project-description">- Lead engineering efforts on a small 5 person team with several contractors under me. I either designed or worked on every feature.</p>
+                        <p class="project-description">- Created using the Godot Game Engine. I acted as a liason between the team and the Godot development team, making sure we could cook!</p>
+                        <p class="project-description">- Project was sadly cancelled after failing to receive additional funding, development lasted about a year and a half.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <a href="NicoGravesResume2025.pdf" target="_blank" download="">resume</a> |
+            <a href="https://github.com/yaboigraves" target="_blank">github</a> |
+            <a href="https://gravesmakesart.itch.io/" target="_blank">itch.io</a> |
+            <a href="https://soundcloud.com/gravesmakesart" target="_blank">soundcloud</a>
+        </div>
+    </div>
     
-    }(i));
-    
-  }
-
-
-}
-
-
-function getPics() {} //just for this demo
-  const imgs = document.querySelectorAll('.preview_gallery img');
-  const fullPage = document.querySelector('#fullpage');
-
-  imgs.forEach(img => {
-    img.addEventListener('click', function() {
-      fullPage.style.backgroundImage = 'url(' + img.src + ')';
-      fullPage.style.display = 'block';
-    });
-});
-
-
-createDiag( individual );
-getPics()
-
-</script>
-  
-  
-  
-  
+    <script src="main.js"></script>
+</body>
 </html>
-  
-  
-  
-  
-  
-  
