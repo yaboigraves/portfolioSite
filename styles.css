@@ -169,7 +169,7 @@ a:hover {
   margin-right: auto;
   width: 25%;
   margin-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   border-radius: 100px;
   box-shadow: 0 0 0 3px wheat, 0 0 0 12px #251C00;
   -webkit-touch-callout: none;
@@ -183,7 +183,7 @@ a:hover {
 }
 
 #dialog {
-  height: 90px;
+  height: 120px;
   background: #1c1c1c;
   margin: auto;
   border-radius: 25px;
@@ -192,7 +192,7 @@ a:hover {
   font-family: "dialogue_content", monospace;
   font-size: 16px;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
   position: relative;
   text-transform: uppercase;
   word-spacing: 3px;
